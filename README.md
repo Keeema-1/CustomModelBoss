@@ -1,7 +1,8 @@
 # カスタムモデルを使ったボスモデルの表現方法
 
-コマンドとリソースパックを使って、カスタムモデルボスを表現しよう！  
-あくまで自己流ですが、カスタムモデルボスの作成方法を解説します。  
+データパックとリソースパックを使って、カスタムモデルボスを表現しよう！  
+あくまで自己流ですが、カスタムモデルボスの作成方法を解説します。
+データパック、リソースパック、storage等の知識がある程度ある人向けに解説しています。ご了承ください。  
 
 ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
 
@@ -35,12 +36,13 @@
 
 メインパーツが動きの軸となるため、体の胴体などにあたる部分にすることをお勧めします。根っこ側のパーツを親パーツ、末端側のパーツを子パーツと呼ばせてもらいます。
 
-パーツごとの親子関係を決めたあと、子パーツは親パーツからの相対座標にテレポートさせるようにします。そうすることで、たとえば首を曲げた時に、その先の頭も付随して曲がってくれます。
+パーツごとの親子関係を決めたあと、子パーツは親パーツからのローカル座標(^)でテレポートさせるようにします。そうすることで、たとえば首を曲げた時に、その先の頭も付随して曲がってくれます。
 
     # 例: 首パーツAにくっつく頭パーツBの位置を決めるとき
     execute as <頭パーツB> at <首パーツA> run tp ^ ^0.5 ^1
 
-全パーツについて相対テレポートを実装したら、メインパーツを移動させてみて、他のパーツが正しく付いてくるか確かめましょう。
+全パーツについてテレポートを実装したら、メインパーツを移動させると他のパーツもついてくるはずです。
+
 
 これで一気にらしくなりましたね！次は関節を設定して、パーツの角度を変えられるよるにします。
 
@@ -50,17 +52,69 @@
 制御しやすくするために、スコアボードを追加します。相対角度rx/ry、絶対角度rx_global/ry_globalを追加します。各パーツの関節を動かしたい分だけrx/ryを設定して、それを考慮したワールド上での角度をrx_global/ry_globalで計算し、Rotationに代入します。
 
 #### <具体的な計算方法>
-1つの親パーツと、それにくっついている1つの子パーツで考えてみます。前提として親パーツのrx_global/ry_globalが決まっているならば、(子パーツの絶対角度)=(親パーツの絶対角度)+(子パーツの相対角度)です。メインのパーツのrx_global/ry_globalはRotationそのままとして、それにくっ付くパーツに順番にこの計算を行い、各々の結果をRotationに代入します。この機構を作れば、相対角度rx/ryを変更すれば角度が変わるはずです。
+1つの親パーツと、それにくっついている1つの子パーツで考えてみます。前提として親パーツのrx_global/ry_globalが決まっているならば、(子パーツの絶対角度)=(親パーツの絶対角度)+(子パーツの相対角度)です。
+
+        scoreboard players operation <子> rx_global = <親> rx_global
+        scoreboard players operation <子> rx_global += <子> rx
+
+        scoreboard players operation <子> ry_global = <親> ry_global
+        scoreboard players operation <子> ry_global += <子> ry
+
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/4.png)
+
+メインのパーツのrx_global/ry_globalはメインパーツのRotationをそのまま使用し、それにくっ付くパーツに順番にこの計算を行い、各々の結果をRotationに代入します。この機構を作れば、相対角度rx/ryを変更すれば角度が変わるはずです。
+
 
 ここまでで、パーツの角度をスコアボードで管理出来るようになりました。
-次は、ポーズを保存して、保存したポーズを1コマンドでセット出来るようにします。
-まずは、ポーズを設定しやすいように、チャット欄を用いてポーズ開発コマンドを作成します。こんな感じで、チャット欄をポチポチするだけでポーズを作ることができます。
-続いてポーズの保存をします。ポーズはstorageに保存します。スコアボードをstorageに代入しています。
-ポーズをセットする場合は、逆にstorageからスコアボードに代入します。
+
+次は、ポーズの保存・保存したポーズの呼び出しを実装します。
+
+## 4. ポーズの保存/呼び出しをする
+
+### 4-1. ポーズ開発コマンド
+
+まずは、ポーズを設定しやすいようにポーズ開発コマンドを作成します。こんな感じで、チャット欄をポチポチするだけでポーズを作ることができるコマンド機構です。
+
+
+ポーズ開発コマンドでポーズを決めたら、次はポーズの保存をします。ポーズは各パーツのスコアrx/ryをstorageに代入して保存します。
+
+        # 例: ボス"boss_name"のポーズ"pose_name"を保存するとき
+        ## パーツX
+        execute store result storage boss:pose boss_name.pose_name.X.rx int 1 run scoreboard players get <パーツX> rx
+        execute store result storage boss:pose boss_name.pose_name.X.ry int 1 run scoreboard players get <パーツX> ry
+        ## パーツY
+        execute store result storage boss:pose boss_name.pose_name.Y.rx int 1 run scoreboard players get <パーツY> rx
+        execute store result storage boss:pose boss_name.pose_name.Y.ry int 1 run scoreboard players get <パーツY> ry
+        ...
+
+ポーズを呼び出す場合は、逆にstorageからスコアボードに代入します。
+        # 例: ボス"boss_name"のポーズ"pose_name"を呼び出すとき
+        ## パーツX
+        execute store result score <パーツX> rx run data get storage boss:pose boss_name.pose_name.X.rx
+        execute store result score <パーツX> ry run data get storage boss:pose boss_name.pose_name.X.ry
+        ## パーツY
+        execute store result score <パーツY> rx run data get storage boss:pose boss_name.pose_name.Y.rx
+        execute store result score <パーツY> ry run data get storage boss:pose boss_name.pose_name.Y.ry
+        ...
+
 こんな感じでセット出来ました。
 
+### 4-2. 角速度
+
 このままではポーズが一瞬で切り替わるので、滑らかに切り替わるようにします。
-新しいスコアボードを追加します。目標角度rx_goal/ry_goal、角速度drx/dryです。ポーズをセットする時はrx/ryを変更するのでは無く、目標値を変更するようにします。続いて、目標値に対して角速度を加算or減算して近づいていく処理を追加します。ポーズをセットする時にこの角速度を変えることで、動きの速さが変化します。
+新しくスコアボード目標角度rx_goal/ry_goal、角速度drx/dryを追加します。ポーズをセットする時はrx/ryを変更するのでは無く、目標値を変更するようにします。続いて、目標値に対して角速度を加算or減算して近づいていく処理を追加します。ポーズをセットする時にこの角速度を変えることで、動きの速さが変化します。
+
+### 4-3. 別ワールドへのポーズ情報の引継ぎ
+
+これでボスモデル表現は完成!!…と思いきや、このままでは1つ問題点が。ストレージは別ワールドに引き継ぐことが出来ないため、別のワールドにポーズ情報を送るためのコマンドを実装する必要があります。
+
+data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y":{"rx":0,"ry":0},...}}}
+のように、ストレージに保存したポーズ情報を手打ちで書かなければなりません。
+
+ストレージの内容をコピーする方法として、自分が知っている1つの方法を紹介します。(もっとスマートな方法があれば教えていただきたいです。)
+1. VisualStudioCodeの拡張機能 NBT Viewer をインストールする
+2. .minecraft\saves\ワールド名\datapacks\データパック名\data\command_storage_XXX.dat (XXX:ストレージの名前空間) を開き、SNBT形式を選択する
+3. 表示されたものをコピーし、data merge storage boss:pose の後ろにつながるように該当部分を切り取って整形
 
 これでやっと、ボスモデルの表現の基礎が出来ました。
 
