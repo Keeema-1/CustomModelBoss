@@ -27,7 +27,7 @@
 
 ボスモデルを作成する際には、動かしたいパーツごとに分けてモデルを作成する必要があります。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/2.gif)
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/2.png)
 
 パーツの中で、メインとなるパーツを決めます。メインのパーツを根として、他のパーツはそこから伸びる枝のように考えます。根っこ側のパーツを親パーツ、末端側のパーツを子パーツと呼ばせてもらいます。子パーツは親パーツからの相対座標にテレポートさせます。
 
