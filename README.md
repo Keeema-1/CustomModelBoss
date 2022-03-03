@@ -10,7 +10,7 @@
 Keeema — 昨日 02:38
 つまりコマンドとリソースパックを使ってカスタムモデルボスを作ろう！
 
-![demo]
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
 
 こんな感じのボスを作るよ(例)
 まず、どのように自作のモデルを表示しているかというと、「アイテムのモデルを自作して、防具立ての頭に装着させる」というやり方です。ここら辺の詳細は【here】で。
