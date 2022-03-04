@@ -48,7 +48,7 @@
 
 ## 3. 関節部分を曲げる
 
-パーツの角度を制御するには、nbtのRotationを用います。Rotationを編集するとそれに従って防具立てが回転するので、動かしたい角度の分だけRotationに加算/減算することで制御します。  
+パーツの角度を制御するには、nbtのRotationを用います。Rotationを編集するとそれに従って防具立てが回転するので、動かしたい角度の分だけRotationに加算/減算することで制御します。/tpでも角度を変えることが出来ますが、そちらでは計算結果を用いることが出来ないため、ここでは使いません。  
 制御しやすくするために、スコアボードを追加します。相対角度rx/ry、絶対角度rx_global/ry_globalを追加します。各パーツの関節を動かしたい分だけrx/ryを設定して、それを考慮したワールド上での角度をrx_global/ry_globalで計算し、Rotationに代入します。
 
 #### <具体的な計算方法>
@@ -134,3 +134,18 @@ repeat:
 impulse:
 ･ポーズ設定コマンドでポーズを設定し、storageに保存する
 ･設定したポーズをセットする 
+
+
+ - boss
+     - general
+         - main
+         - living
+         - dead
+         - active
+     - each
+         - common
+         - boss_A
+             - skin
+             - hit_box
+             - action
+
