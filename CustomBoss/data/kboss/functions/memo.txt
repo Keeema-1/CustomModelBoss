@@ -1,0 +1,9 @@
+
+kboss:test {next_action:1b}
+
+kboss:settings {sendCommandFeedback:1b}
+
+kboss:temp {temp:{}}
+
+system_original 元のやつ
+system_v1 マルテロスだけにして、整理

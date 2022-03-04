@@ -1,0 +1,3 @@
+
+execute if block ~-1 ~-0.11 ~-1 #kboss:space if block ~-1 ~-0.11 ~ #kboss:space if block ~-1 ~-0.11 ~1 #kboss:space if block ~ ~-0.11 ~-1 #kboss:space if block ~ ~-0.11 ~ #kboss:space if block ~ ~-0.11 ~1 #kboss:space if block ~1 ~-0.11 ~-1 #kboss:space if block ~1 ~-0.11 ~ #kboss:space if block ~1 ~-0.11 ~1 #kboss:space run tp ~ ~-0.1 ~
+execute if block ~-1 ~-0.21 ~-1 #kboss:space if block ~-1 ~-0.21 ~ #kboss:space if block ~-1 ~-0.21 ~1 #kboss:space if block ~ ~-0.21 ~-1 #kboss:space if block ~ ~-0.21 ~ #kboss:space if block ~ ~-0.21 ~1 #kboss:space if block ~1 ~-0.21 ~-1 #kboss:space if block ~1 ~-0.21 ~ #kboss:space if block ~1 ~-0.21 ~1 #kboss:space run tp ~ ~-0.2 ~

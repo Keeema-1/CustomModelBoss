@@ -1,0 +1,1 @@
+tp @e[distance=..4,tag=KB.SkinPos,tag=KB.LeftArm1,tag=KB.BossCheck,limit=1] ^ ^ ^0.3
