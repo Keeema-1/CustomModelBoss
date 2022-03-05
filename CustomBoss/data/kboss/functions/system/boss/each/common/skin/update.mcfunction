@@ -34,7 +34,7 @@ execute if entity @s[tag=!KB.UsePoseZ] store result storage kboss:temp Pose.Head
 #execute store result entity @s Pose.Head[2] float 1 run scoreboard players get @s kb.rz_global
 execute if entity @s[tag=KB.UsePoseZ] store result storage kboss:temp Pose.Head[2] float 1 run scoreboard players get @s kb.rz_global
 ## 反映
-data modify entity @s Pose set from storage kboss:temp
+data modify entity @s Pose set from storage kboss:temp Pose
 # == ==
 
 # == <AECに乗せないパターン> ==

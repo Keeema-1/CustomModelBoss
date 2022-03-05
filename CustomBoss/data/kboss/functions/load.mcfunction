@@ -1,6 +1,6 @@
 #ロード時に実行される
 tellraw @s [{"text":""}]
-tellraw @a [{"text":"データパック:Boss By Keeema の導入に成功しました。","color":"yellow"}]
+tellraw @a [{"text":"データパック:Bossの導入に成功しました。","color":"yellow"}]
 
 # 個体id
 scoreboard objectives add kb.id dummy
@@ -9,6 +9,9 @@ execute unless score $system kb.id matches 0.. run scoreboard players set $syste
 # 一時変数
 scoreboard objectives add kb.temp dummy
 scoreboard objectives add kb.temp2 dummy
+
+# 一時変数
+scoreboard objectives add kb.target_id dummy
 
 # 現在のアクション
 scoreboard objectives add kb.action dummy

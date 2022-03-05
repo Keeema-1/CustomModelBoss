@@ -5,7 +5,7 @@ scoreboard players set $system kb.max_health 1200
 function kboss:system/summon/martellos/normal/sub
 
 # 辺りを見渡す
-#execute as @e[tag=KB.Main,tag=KB.BossCheck] run function kboss:system/each_boss/martellos/action_change/2
+execute as @e[tag=KB.Main,tag=KB.BossCheck] run function kboss:system/boss/each/martellos/action/change/2
 
 tag @e[tag=KB.NewSummon] remove KB.BossCheck
 tag @e[tag=KB.NewSummon] remove KB.NewSummon

@@ -39,3 +39,6 @@ scoreboard players reset $boss_health
 scoreboard players reset $hitbox_num
 scoreboard players reset $hitbox_num_correct
 scoreboard players reset $health_remove
+
+tag @a[tag=KB.MainTarget] remove KB.MainTarget
+tag @a[tag=KB.Target] remove KB.Target
