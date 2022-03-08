@@ -59,6 +59,7 @@ scoreboard objectives add kb.attack_damage dummy
 team add boss
 
 team modify boss collisionRule pushOwnTeam
+team modify boss nametagVisibility never
 
 bossbar add kboss:health/1 ""
 bossbar add kboss:health/2 ""

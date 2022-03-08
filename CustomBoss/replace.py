@@ -1,9 +1,6 @@
-TOP_DIR  = "./data/kboss/functions/system/boss/each/martellos/action"
+TOP_DIR  = "./data/kboss/functions/system/"
 PATTERNS = {
-            'function kboss:system/boss/each/martellos/action/common/ypos':'function kboss:system/boss/each/common/action/ypos',
-            'function kboss:system/boss/each/martellos/action/common/barrier':'function kboss:system/boss/each/common/action/barrier',
-            'function kboss:system/boss/each/martellos/action/common/player_direction':'function kboss:system/boss/each/common/action/player_direction',
-            'function kboss:system/boss/each/martellos/action/common/space':'function kboss:system/boss/each/common/action/space'
+            'KB.AI':'KB.HitBox'
 
             }
 EXT      = []
