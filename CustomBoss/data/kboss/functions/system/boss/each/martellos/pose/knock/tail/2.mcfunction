@@ -1,7 +1,7 @@
 
 data modify storage kboss:temp temp set from storage kboss:pose martellos.knock.tail.2
 
-scoreboard players set @e[tag=KB.Skin,tag=KB.BossCheck] kb.drx 20
+scoreboard players set @e[tag=KB.Skin,tag=KB.BossCheck] kb.drx 30
 scoreboard players set @e[tag=KB.Skin,tag=KB.BossCheck] kb.dry 10
 scoreboard players set @e[tag=KB.Skin,tag=KB.BossCheck] kb.drz 2
 

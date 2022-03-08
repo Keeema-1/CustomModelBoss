@@ -28,11 +28,11 @@ execute if score @s kb.temp matches 8 run function kboss:system/boss/each/martel
 # 13:タックル(左)
 execute if score @s kb.temp matches 9 run function kboss:system/boss/each/martellos/action/change/13
 # 14:回転(右)
-execute if score @s kb.temp matches 10 run function kboss:system/boss/each/martellos/action/change/14
+execute if score @s kb.temp matches 10..11 run function kboss:system/boss/each/martellos/action/change/14
 # 15:回転(左)
-execute if score @s kb.temp matches 11 run function kboss:system/boss/each/martellos/action/change/15
+execute if score @s kb.temp matches 12..13 run function kboss:system/boss/each/martellos/action/change/15
 # 16:揺らす
-execute if score @s kb.temp matches 12..13 run function kboss:system/boss/each/martellos/action/change/16
+#execute if score @s kb.temp matches 12..13 run function kboss:system/boss/each/martellos/action/change/16
 # 17:突進
 #execute if score @s kb.temp matches 11 run function kboss:system/boss/each/martellos/action/change/17
 # 18:小突く

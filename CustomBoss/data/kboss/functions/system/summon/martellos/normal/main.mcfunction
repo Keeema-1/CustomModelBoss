@@ -1,6 +1,6 @@
 
 scoreboard players set $system kb.attack_damage 10
-scoreboard players set $system kb.max_health 1200
+scoreboard players set $system kb.max_health 800
 
 function kboss:system/summon/martellos/normal/sub
 

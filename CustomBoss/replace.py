@@ -1,7 +1,10 @@
-TOP_DIR  = "./data/kboss/functions/system/boss/each/martellos/skin/each"
+TOP_DIR  = "./data/kboss/functions/system/boss/each/martellos/action"
 PATTERNS = {
-            'tag @e[':'execute as @e[',
-            ' add KB.Parent':' run function kboss:system/boss/each/common/skin/parent'
+            'function kboss:system/boss/each/martellos/action/common/ypos':'function kboss:system/boss/each/common/action/ypos',
+            'function kboss:system/boss/each/martellos/action/common/barrier':'function kboss:system/boss/each/common/action/barrier',
+            'function kboss:system/boss/each/martellos/action/common/player_direction':'function kboss:system/boss/each/common/action/player_direction',
+            'function kboss:system/boss/each/martellos/action/common/space':'function kboss:system/boss/each/common/action/space'
+
             }
 EXT      = []
 

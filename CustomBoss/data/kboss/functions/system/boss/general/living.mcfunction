@@ -7,7 +7,7 @@ execute store result score @s kb.ry_global run data get entity @s Rotation[0] 1
 execute store result score @s kb.rx_global run data get entity @s Rotation[1] 1
 
 # 敵対相手
-#function kboss:system/each_boss/common/target/main
+function kboss:system/boss/each/common/target/main
 
 # 当たり判定用エンティティがすべてロードされているかどうかを調べる
 execute store result score $hitbox_num kb.temp if entity @e[distance=..16,tag=KB.BossCheck,tag=KB.AI]

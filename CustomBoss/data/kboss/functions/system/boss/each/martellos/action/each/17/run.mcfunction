@@ -10,7 +10,7 @@ function kboss:system/boss/each/martellos/action/common/player_direction/is_fron
 execute if data storage kboss:temp {direction:{frontside:0b}} run function kboss:system/boss/each/martellos/action/each/17/to3
 
 function kboss:system/boss/each/martellos/action/common/space/front
-execute if data storage kboss:temp {space:1b} at @s run tp @s ^ ^ ^0.5
+execute if data storage kboss:temp {space:1b} at @s run tp @s ^ ^ ^0.7
 
 
 execute at @s run function kboss:system/boss/each/martellos/action/common/ypos/main

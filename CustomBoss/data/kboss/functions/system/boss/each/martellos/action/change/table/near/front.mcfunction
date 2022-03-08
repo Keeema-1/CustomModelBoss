@@ -16,7 +16,7 @@ execute if predicate kboss:random/500m run scoreboard players add @s kb.temp 1
 # 7:叩く(右)
 execute if score @s kb.temp matches 0..2 run function kboss:system/boss/each/martellos/action/change/7
 # 8:叩く(左)
-execute if score @s kb.temp matches 3..4 run function kboss:system/boss/each/martellos/action/change/8
+execute if score @s kb.temp matches 3..5 run function kboss:system/boss/each/martellos/action/change/8
 # 9:叩く(尻尾)
 #execute if score @s kb.temp matches 4 run function kboss:system/boss/each/martellos/action/change/9
 # 10:ステップ(右)
@@ -24,19 +24,19 @@ execute if score @s kb.temp matches 3..4 run function kboss:system/boss/each/mar
 # 11:ステップ(左)
 #execute if score @s kb.temp matches 10..11 run function kboss:system/boss/each/martellos/action/change/11
 # 12:タックル(右)
-execute if score @s kb.temp matches 5 run function kboss:system/boss/each/martellos/action/change/12
+execute if score @s kb.temp matches 6 run function kboss:system/boss/each/martellos/action/change/12
 # 13:タックル(左)
-execute if score @s kb.temp matches 6 run function kboss:system/boss/each/martellos/action/change/13
+execute if score @s kb.temp matches 7 run function kboss:system/boss/each/martellos/action/change/13
 # 14:回転(右)
-execute if score @s kb.temp matches 7 run function kboss:system/boss/each/martellos/action/change/14
+execute if score @s kb.temp matches 8 run function kboss:system/boss/each/martellos/action/change/14
 # 15:回転(左)
-execute if score @s kb.temp matches 8 run function kboss:system/boss/each/martellos/action/change/15
+execute if score @s kb.temp matches 9 run function kboss:system/boss/each/martellos/action/change/15
 # 16:揺らす
-execute if score @s kb.temp matches 9..10 run function kboss:system/boss/each/martellos/action/change/16
+#execute if score @s kb.temp matches 9..10 run function kboss:system/boss/each/martellos/action/change/16
 # 17:突進
-execute if score @s kb.temp matches 11 run function kboss:system/boss/each/martellos/action/change/17
+execute if score @s kb.temp matches 10 run function kboss:system/boss/each/martellos/action/change/17
 # 18:小突く
-execute if score @s kb.temp matches 12..13 run function kboss:system/boss/each/martellos/action/change/18
+execute if score @s kb.temp matches 11..13 run function kboss:system/boss/each/martellos/action/change/18
 # 19:回転土飛ばし(右)
 execute if score @s kb.temp matches 14 run function kboss:system/boss/each/martellos/action/change/19
 # 20:回転土飛ばし(左)

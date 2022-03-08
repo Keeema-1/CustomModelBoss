@@ -7,7 +7,3 @@ tag @s add KB.Dead
 
 execute as @e[tag=KB.BossCheck,tag=KB.AI] run data merge entity @s {Size:0}
 kill @e[tag=KB.BossCheck,tag=KB.AI]
-
-
-# test
-kill @e[tag=KB.BossCheck]

@@ -5,3 +5,4 @@ execute if predicate kboss:random/200m run data merge storage kboss:temp {check:
 execute if data storage kboss:temp {check:0b} run function kboss:system/boss/each/martellos/action/change/4
 execute if data storage kboss:temp {check:1b} run function kboss:system/boss/each/martellos/action/change/table/main
 
+#function kboss:system/boss/each/martellos/action/change/12

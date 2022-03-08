@@ -1,6 +1,6 @@
 
 execute at @s run function kboss:system/boss/each/martellos/action/common/player_direction/area
-execute if data storage kboss:temp {direction:{area:"front"}} run tp @s ~ ~ ~ ~-5 0
+execute if data storage kboss:temp {direction:{area:"front"}} run tp @s ~ ~ ~ ~-10 0
 execute unless data storage kboss:temp {direction:{area:"front"}} unless data storage kboss:temp {direction:{area:"back"}} run tp @s ~ ~ ~ ~-10 0
 execute if data storage kboss:temp {direction:{area:"back"}} run tp @s ~ ~ ~ ~-15 0
 

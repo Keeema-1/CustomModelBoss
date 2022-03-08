@@ -1,9 +1,9 @@
 
-# ステップ(右)
+# ステップ(後)->すぐ叩くor回転
 
-function kboss:system/boss/each/martellos/pose/step/right/1
+function kboss:system/boss/each/martellos/pose/step/back/1
 
-scoreboard players set @s kb.action 10
+scoreboard players set @s kb.action 22
 scoreboard players set @s kb.action_sub 1
 
 scoreboard players set @s kb.action_time 20

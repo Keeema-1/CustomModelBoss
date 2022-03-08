@@ -20,3 +20,5 @@ execute if score @s kb.action matches 19 run function kboss:system/boss/each/mar
 execute if score @s kb.action matches 20 run function kboss:system/boss/each/martellos/action/each/20/main
 # 21:ステップ(後)
 execute if score @s kb.action matches 21 run function kboss:system/boss/each/martellos/action/each/21/main
+# 22:ステップ(後)->すぐ叩くor回転
+execute if score @s kb.action matches 22 run function kboss:system/boss/each/martellos/action/each/22/main

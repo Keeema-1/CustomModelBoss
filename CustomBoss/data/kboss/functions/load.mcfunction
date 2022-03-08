@@ -58,6 +58,10 @@ scoreboard objectives add kb.attack_damage dummy
 
 team add boss
 
+team modify boss collisionRule pushOwnTeam
+
 bossbar add kboss:health/1 ""
 bossbar add kboss:health/2 ""
 bossbar add kboss:health/3 ""
+
+#function kboss:command/pose_data

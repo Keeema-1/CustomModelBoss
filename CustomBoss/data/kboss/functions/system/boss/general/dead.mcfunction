@@ -1,2 +1,2 @@
 
-function kboss:system/each_boss/general/active
+function kboss:system/boss/general/active
