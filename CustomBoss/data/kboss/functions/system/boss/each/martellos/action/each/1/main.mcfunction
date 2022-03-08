@@ -1,11 +1,11 @@
 
 # 歩く
 
-function kboss:system/boss/each/martellos/action/common/space/front
+function kboss:system/boss/each/common/action/space/front
 
 execute if data storage kboss:temp {space:1b} facing entity @p feet rotated ~ 0 run tp ^ ^ ^0.4
 
-execute at @s run function kboss:system/boss/each/martellos/action/common/ypos/main
+execute at @s run function kboss:system/boss/each/common/action/ypos/main
 
 execute if score @s kb.action_sub matches 1 run function kboss:system/boss/each/martellos/action/each/1/1
 

@@ -1,7 +1,7 @@
 
 # 無
 
-function kboss:system/boss/each/martellos/action/common/ypos/main
+function kboss:system/boss/each/common/action/ypos/main
 
 execute if score @s kb.action_time matches 10.. run scoreboard players set @s kb.action_time 9
 

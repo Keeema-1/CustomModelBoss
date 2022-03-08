@@ -1,10 +1,11 @@
 
 tag @s add KB.AlreadyProcessed
-tag @e[distance=..4,tag=KB.Bullet,tag=KB.Dirt,sort=nearest,limit=1] add KB.AlreadyProcessed
+tag @e[distance=..4,tag=KB.Bullet,tag=KB.Dirt,tag=!KB.AlreadyProcessed,sort=nearest,limit=1] add KB.Check
+tag @e[distance=..4,tag=KB.Check,limit=1] add KB.AlreadyProcessed
 
 scoreboard players remove @s kb.action_time 1
 
-tp @e[distance=..4,tag=KB.Bullet,tag=KB.Dirt,sort=nearest,limit=1] @s
+tp @e[distance=..4,tag=KB.Check,limit=1] @s
 
 execute if score @s kb.action_time matches 96.. run tp @s ^ ^0.5 ^
 execute if score @s kb.action_time matches 93..95 run tp @s ^ ^0.1 ^
@@ -24,8 +25,8 @@ particle minecraft:block minecraft:dirt ~ ~1.5 ~ 0 0 0 1 1
 
 data merge storage kboss:temp {check:0b}
 
-#execute positioned ~-1 ~3 ~-1 if entity @a[dx=1,dy=0,dz=1,gamemode=!creative,gamemode=!spectator] at @a[dx=1,dy=0,dz=1,gamemode=!creative,gamemode=!spectator,limit=1] run function kboss:system/child/dirt/hit
-
 execute at @s if data storage kboss:temp {check:0b} unless block ~ ~3 ~ #kboss:space_and_barrier positioned ~ ~3 ~ run function kboss:system/child/dirt/hit
 
 execute at @s if data storage kboss:temp {check:0b} unless score @s kb.action_time matches 0.. run function kboss:system/child/dirt/hit
+
+tag @e[distance=..4,tag=KB.Check,limit=1] remove KB.Check
