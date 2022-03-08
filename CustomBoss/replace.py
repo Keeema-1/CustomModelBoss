@@ -1,6 +1,15 @@
-TOP_DIR  = "./data/kboss/functions/system/"
+TOP_DIR  = "./data/kboss/functions/system/boss/"
 PATTERNS = {
-            'KB.AI':'KB.HitBox'
+            'function kboss:system/boss/each/martellos/action/change/0':'function kboss:system/boss/each/martellos/action/each/0/start',
+            'function kboss:system/boss/each/martellos/action/change/1':'function kboss:system/boss/each/martellos/action/each/1/start',
+            'function kboss:system/boss/each/martellos/action/change/2':'function kboss:system/boss/each/martellos/action/each/2/start',
+            'function kboss:system/boss/each/martellos/action/change/3':'function kboss:system/boss/each/martellos/action/each/3/start',
+            'function kboss:system/boss/each/martellos/action/change/4':'function kboss:system/boss/each/martellos/action/each/4/start',
+            'function kboss:system/boss/each/martellos/action/change/5':'function kboss:system/boss/each/martellos/action/each/5/start',
+            'function kboss:system/boss/each/martellos/action/change/6':'function kboss:system/boss/each/martellos/action/each/6/start',
+            'function kboss:system/boss/each/martellos/action/change/7':'function kboss:system/boss/each/martellos/action/each/7/start',
+            'function kboss:system/boss/each/martellos/action/change/8':'function kboss:system/boss/each/martellos/action/each/8/start',
+            'function kboss:system/boss/each/martellos/action/change/9':'function kboss:system/boss/each/martellos/action/each/9/start'
 
             }
 EXT      = []

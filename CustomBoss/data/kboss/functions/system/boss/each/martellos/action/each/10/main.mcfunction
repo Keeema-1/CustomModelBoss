@@ -3,7 +3,7 @@
 
 
 function kboss:system/boss/each/common/action/space/left
-execute if data storage kboss:temp {space:1b} run tp @s ^0.6 ^ ^ ~3 ~
+execute if data storage kboss:temp {space:1b} run tp @s ^0.6 ^ ^ ~4 ~
 
 execute if score @s kb.action_time matches 13.. at @s run tp ~ ~0.1 ~
 execute if score @s kb.action_time matches ..12 at @s run tp ~ ~-0.1 ~

@@ -7,6 +7,6 @@ execute if score @s kb.action_time matches 15 run function kboss:system/boss/eac
 
 execute at @s run function kboss:system/boss/each/common/action/ypos/main
 
-execute if score @s kb.action_time matches 5 if predicate kboss:random/200m run function kboss:system/boss/each/martellos/action/change/8
+execute if score @s kb.action_time matches 5 if predicate kboss:random/200m run function kboss:system/boss/each/martellos/action/each/8/start
 
 execute if score @s kb.action_time matches ..0 run function kboss:system/boss/each/martellos/action/each/7/finish

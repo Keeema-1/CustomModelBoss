@@ -1,2 +1,2 @@
 
-function kboss:system/boss/each/martellos/action/change/table/main
+function kboss:system/boss/each/martellos/action/random/main
