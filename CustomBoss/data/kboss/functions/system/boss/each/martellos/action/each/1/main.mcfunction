@@ -3,7 +3,7 @@
 
 function kboss:system/boss/each/common/action/space/front
 
-execute if data storage kboss:temp {space:1b} facing entity @p feet rotated ~ 0 run tp ^ ^ ^0.4
+execute if data storage kboss:temp {space:1b} facing entity @p feet rotated ~ 0 run tp ^ ^ ^0.5
 
 execute at @s run function kboss:system/boss/each/common/action/ypos/main
 
