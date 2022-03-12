@@ -39,6 +39,6 @@ execute if score @s kb.temp matches 4..8 run function kboss:system/boss/each/mar
 # 19:回転土飛ばし(右)
 execute if score @s kb.temp matches 9..11 run function kboss:system/boss/each/martellos/action/each/19/start
 # 20:回転土飛ばし(左)
-execute if score @s kb.temp matches 12..14 run function kboss:system/boss/each/martellos/action/each/10/start
+execute if score @s kb.temp matches 12..14 run function kboss:system/boss/each/martellos/action/each/20/start
 # 23:ジャンプ叩き
-execute if score @s kb.temp matches 15 run function kboss:system/boss/each/martellos/action/each/13/start
+execute if score @s kb.temp matches 15 run function kboss:system/boss/each/martellos/action/each/23/start

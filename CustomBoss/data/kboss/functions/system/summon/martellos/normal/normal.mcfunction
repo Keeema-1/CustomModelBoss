@@ -1,6 +1,10 @@
 
-scoreboard players set $system kb.attack_damage 10
-scoreboard players set $system kb.max_health 800
+scoreboard players set $temp kb.attack_damage 10
+scoreboard players set $temp kb.max_health 800
+scoreboard players set $temp kb.angry_border 300
+# この時間中は怒り始めない
+scoreboard players set $temp kb.angry_time 1200
+
 
 function kboss:system/summon/martellos/normal/common
 

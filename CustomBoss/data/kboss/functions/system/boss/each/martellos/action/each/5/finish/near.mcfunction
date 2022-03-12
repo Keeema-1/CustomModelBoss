@@ -14,9 +14,9 @@ execute if score @s kb.temp matches 1 if data storage kboss:temp {direction:{lef
 # 11:ステップ(左)
 execute if score @s kb.temp matches 1 if data storage kboss:temp {direction:{leftside:0b}} run function kboss:system/boss/each/martellos/action/each/11/start
 # 21:ステップ(後)
-execute if score @s kb.temp matches 2 run function kboss:system/boss/each/martellos/action/each/11/start
+execute if score @s kb.temp matches 2 run function kboss:system/boss/each/martellos/action/each/21/start
 # 22:ステップ(後)
-execute if score @s kb.temp matches 3..4 run function kboss:system/boss/each/martellos/action/each/12/start
+execute if score @s kb.temp matches 3..4 run function kboss:system/boss/each/martellos/action/each/22/start
 
 # 他のアクション
 execute if score @s kb.temp matches 5.. run function kboss:system/boss/each/martellos/action/random/main

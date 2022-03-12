@@ -13,5 +13,6 @@ execute as @e[distance=..16,tag=KB.HitBox,tag=KB.BossCheck] run data merge entit
 
 # 攻撃力
 execute as @e[distance=..16,tag=KB.HitBox,tag=KB.BossCheck] store result entity @s Attributes[{Name:"minecraft:generic.attack_damage"}].Base double 1 run scoreboard players get @e[distance=..16,tag=KB.Main,tag=KB.BossCheck,limit=1] kb.attack_damage
+execute if entity @s[tag=KB.Angry] run function kboss:system/boss/each/martellos/action/angry/attack_damage
 
 playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 2 0

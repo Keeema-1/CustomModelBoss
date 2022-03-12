@@ -52,9 +52,11 @@ scoreboard objectives add kb.hp_remove_500 dummy
 scoreboard objectives add kb.attack_damage dummy
 
 # 怒りモード
-#scoreboard objectives add kb.angry_time dummy
+scoreboard objectives add kb.angry_time dummy
 ## 前回の怒り終了時のHP
-#scoreboard objectives add kb.last_angry_health dummy
+scoreboard objectives add kb.last_angry_health dummy
+## 怒り状態になるまで最低限必要なダメージ
+scoreboard objectives add kb.angry_border dummy
 
 team add boss
 
