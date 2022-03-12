@@ -94,7 +94,7 @@ tellrawコマンドでチャット欄に現在の角度情報を表示します�
 
 ポーズ開発コマンドでポーズを決めたら、次はポーズの保存をします。ポーズは各パーツのスコアrx/ryをstorageに代入して保存します。
 
-        # 例: ボス"boss_name"のポーズ"pose_name"を保存するとき
+        #例: ボス"boss_name"のポーズ"pose_name"を保存するとき
         ## パーツX
         execute store result storage boss:pose boss_name.pose_name.X.rx int 1 run scoreboard players get <パーツX> rx
         execute store result storage boss:pose boss_name.pose_name.X.ry int 1 run scoreboard players get <パーツX> ry
@@ -104,6 +104,7 @@ tellrawコマンドでチャット欄に現在の角度情報を表示します�
         ...
 
 ポーズを呼び出す場合は、逆にstorageからスコアボードに代入します。
+
         # 例: ボス"boss_name"のポーズ"pose_name"を呼び出すとき
         ## パーツX
         execute store result score <パーツX> rx run data get storage boss:pose boss_name.pose_name.X.rx
