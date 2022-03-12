@@ -146,20 +146,6 @@ impulse:
 ･あらかじめ設定しておいたポーズをセットする  
 
 
- - boss
-     - general
-         - main
-         - living
-         - dead
-         - active
-     - each
-         - common
-         - boss_A
-             - skin
-             - hit_box
-             - action
-
-
 
  - boss
      - general
@@ -183,3 +169,8 @@ impulse:
          - boss_A
              - skin モデル表示用エンティティの制御
 
+
+
+
+### おまけ
+アニメーションの解説は以上ですが、
