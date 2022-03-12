@@ -55,7 +55,8 @@
 ## 3. 関節部分を曲げる
 
 パーツの角度を制御するために、nbtのRotationを用います。Rotationを編集するとそれに従って防具立てが回転するので、動かしたい角度の分だけRotationに加算/減算することで制御します。/tpでも角度を変えることが出来ますが、そちらではスコアボードの値をそのまま代入することが出来ないため、ここでは使いません。  
-制御しやすくするために、スコアボードを追加します。相対角度rx/ry、絶対角度rx_global/ry_globalを追加します。各パーツの関節を動かしたい分だけrx/ryを設定して、それを考慮したワールド上での角度をrx_global/ry_globalで計算し、Rotationに代入します。
+制御しやすくするために、スコアボードを追加します。相対角度rx/ry、絶対角度rx_global/ry_globalを追加します。各パーツの関節を動かしたい分だけrx/ryを設定して、それを考慮したワールド上での角度をrx_global/ry_globalで計算し、Rotationに代入します。  
+※ ここではx,yの順番をアーマースタンドのnbtのPoseに合わせているため、Rotation[0]=ry、Rotataion[1]=rxの対応となります。上下がx,左右がyです。ややこしくてごめんなさい。
 
 #### <具体的な計算方法>
 1つの親パーツと、それにくっついている1つの子パーツで考えてみます。前提として親パーツのrx_global/ry_globalが決まっているならば、(子パーツの絶対角度)=(親パーツの絶対角度)+(子パーツの相対角度)です。
@@ -66,7 +67,12 @@
         scoreboard players operation <子> ry_global = <親> ry_global
         scoreboard players operation <子> ry_global += <子> ry
 
-メインのパーツのrx_global/ry_globalはメインパーツのRotationをそのまま使用し、それにくっ付くパーツに順番にこの計算を行い、各々の結果をRotationに代入します。この機構を作れば、相対角度rx/ryを変更すれば角度が変わるはずです。
+メインのパーツのrx_global/ry_globalはメインパーツのRotationをそのまま使用し、それにくっ付くパーツに順番にこの計算を行い、各々の結果をRotationに代入します。
+
+        execute as <全パーツ> store result entity @s Rotation[1] float 1 run scoreboard players get @s rx_global
+        execute as <全パーツ> store result entity @s Rotation[0] float 1 run scoreboard players get @s ry_global
+
+この機構を作れば、相対角度rx/ryを変更すれば角度が変わるはずです。
 
 
 ここまでで、パーツの角度をスコアボードで管理出来るようになりました。
