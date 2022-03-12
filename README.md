@@ -5,6 +5,8 @@
 
 ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
 
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
+
 こんな感じのボスをどうやって作っているのか気になる！という方向けに、自分なりのカスタムモデルボスアニメーションの作成方法を解説します。  
 
 ※注意※  
