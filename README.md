@@ -128,6 +128,9 @@ tellrawコマンドでチャット欄に現在の角度情報を表示します�
 
 続いて、目標値に対して角速度を加算or減算して近づいていく処理を追加します。ポーズをセットする時にこの角速度を変えることで、動きの速さが変化します。
 
+        execute if score @s rx < @s rx_goal run scoreboard players operation @s rx += @s drx
+        execute if score @s rx > @s rx_goal run scoreboard players operation @s rx -= @s drx
+
 ### 4-4. 別ワールドへのポーズ情報の引継ぎ
 
 これでボスモデル表現は完成!!…と思いきや、このままでは1つ問題点が。ストレージの情報を別のワールドに引き継ぐためには、別のワールドにポーズ情報を送るためのコマンドを実装する必要があります。
