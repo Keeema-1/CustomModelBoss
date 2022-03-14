@@ -31,8 +31,8 @@ summon minecraft:slime ~ ~ ~ {Size:2,CustomName:'"マルテロス"',NoAI:1b,Pers
 summon minecraft:zoglin ~ ~ ~ {IsBaby:0b,CustomName:'"マルテロス"',NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Tags:["KB.Normal","KB.Size2","KB.Boss","KB.Martellos","KB.LeftLeg","KB.Tail","KB.Tail3","KB.HitBox","KB.Hummer","KB.NewSummon"],DeathLootTable:"minecraft:empty",Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.0d},{Name:"minecraft:generic.attack_knockback",Base:1.0d},{Name:"minecraft:generic.max_health",Base:1024.0d},{Name:"minecraft:generic.armor",Base:10.0d}],Health:1024.0f,ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:projectile_protection",lvl:5},{id:"minecraft:blast_protection",lvl:10}]}}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000000,ShowParticles:0b}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b,AttributeModifiers:[{Amount:0.0d,AttributeName:"minecraft:generic.attack_damage"}]}},{}]}
 
 # 攻撃力
-scoreboard players operation @e[tag=KB.NewSummoned,tag=KB.Main,limit=1] kb.attack_damage = $system kb.attack_damage
-execute as @e[tag=KB.HitBox,tag=KB.NewSummon] store result entity @s Attributes[{Name:"minecraft:generic.attack_damage"}].Base double 0.25 run scoreboard players get $system kb.attack_damage
+scoreboard players operation @e[tag=KB.NewSummoned,tag=KB.Main,limit=1] kb.attack_damage = $temp kb.attack_damage
+execute as @e[tag=KB.HitBox,tag=KB.NewSummon] store result entity @s Attributes[{Name:"minecraft:generic.attack_damage"}].Base double 0.25 run scoreboard players get $temp kb.attack_damage
 
 # スキン
 ## 頭
@@ -91,25 +91,29 @@ data modify entity @e[tag=KB.NewSummon,tag=KB.Skin,tag=KB.Tail2,limit=1] ArmorIt
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2147483647,WaitTime:0,Radius:0.000000001f,RadiusOnUse:0.0f,Potion:"minecraft:empty",RadiusPerTick:0.0f,Particle:"minecraft:block minecraft:air",DurationOnUse:0,Tags:["KB.Normal","KB.Boss","KB.Martellos","KB.SkinPos","KB.NewSummon","KB.Tail3"],Passengers:[{id:"minecraft:armor_stand",Invisible:1b,Marker:1b,Tags:["KB.Normal","KB.Boss","KB.Martellos","KB.Skin","KB.NewSummon","KB.Tail3"]}]}
 data modify entity @e[tag=KB.NewSummon,tag=KB.Skin,tag=KB.Tail3,limit=1] ArmorItems set value [{},{},{},{id:"minecraft:knowledge_book",Count:1b,tag:{CustomModelData:20010}}]
 
+
 # id
-scoreboard players set $system kb.id 0
+scoreboard players set $temp kb.id 0
 execute as @e[tag=KB.NewSummon,type=minecraft:marker,tag=KB.Main] run function kboss:system/summon/id
 
-scoreboard players operation @e[tag=KB.NewSummon] kb.attack_damage = $system kb.attack_damage
-scoreboard players operation @e[tag=KB.NewSummon,type=minecraft:marker,tag=KB.Main] kb.max_health = $system kb.max_health
+scoreboard players operation @e[tag=KB.NewSummon] kb.attack_damage = $temp kb.attack_damage
+scoreboard players operation @e[tag=KB.NewSummon,type=minecraft:marker,tag=KB.Main] kb.max_health = $temp kb.max_health
+scoreboard players operation @e[tag=KB.NewSummon,type=minecraft:marker,tag=KB.Main] kb.angry_time = $temp kb.angry_time
+scoreboard players operation @e[tag=KB.NewSummon,type=minecraft:marker,tag=KB.Main] kb.angry_border = $temp kb.angry_border
+scoreboard players operation @e[tag=KB.NewSummon,type=minecraft:marker,tag=KB.Main] kb.last_angry_health = $temp kb.max_health
 
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=1}] run bossbar set kboss:health/1 visible true
-execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=1}] run bossbar set kboss:health/1 players @a
+#execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=1}] run bossbar set kboss:health/1 players @a
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=1}] run bossbar set kboss:health/1 name "マルテロス"
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=1}] run execute store result bossbar kboss:health/1 max run scoreboard players get @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,limit=1] kb.max_health
 
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=2}] run bossbar set kboss:health/2 visible true
-execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=2}] run bossbar set kboss:health/2 players @a
+#execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=2}] run bossbar set kboss:health/2 players @a
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=2}] run bossbar set kboss:health/2 name "マルテロス"
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=2}] run execute store result bossbar kboss:health/2 max run scoreboard players get @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,limit=1] kb.max_health
 
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=3}] run bossbar set kboss:health/3 visible true
-execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=3}] run bossbar set kboss:health/3 players @a
+#execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=3}] run bossbar set kboss:health/3 players @a
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=3}] run bossbar set kboss:health/3 name "マルテロス"
 execute if entity @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,scores={kb.id=3}] run execute store result bossbar kboss:health/3 max run scoreboard players get @e[type=minecraft:marker,tag=KB.Main,tag=KB.NewSummon,limit=1] kb.max_health
 
