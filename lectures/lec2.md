@@ -1,4 +1,4 @@
-# コマンドとリソパで自作モデルのボスを動かそう！
+# コマンドとリソパで自作モデルのボスを動かそう！  2章 ボスのHPを設定する編
 
 [メインへ](https://github.com/Keeema-1/CustomModelEntity)
 
@@ -20,11 +20,24 @@
 
 ざっくりとした流れはこんな感じです。
 
-1. 自作モデルをマイクラ上で表示する
-2. ボスのパーツを作成して、組み立てる
-3. 関節部分を曲げる
-4. ポーズの保存/呼び出しをする
+1. 当たり判定用エンティティ
+2. HPをスコアボードで管理
+3. ボスバーで表示
 
+前章では、ボスのポーズを作るところまで解説しました。本章では、ボスに対して攻撃を当ててHPを削る、という要素を実装します。
 
-## 1. 自作モデルをマイクラ上で表示する
+## 1. 当たり判定用エンティティ
+
+ボスの当たり判定として、防具立て以外のエンティティも召喚します。  
+スライムはnbtのSizeで大きさを変更することができるため、基本的にはスライムを使うのが良いでしょう。ただし、スライムはkillした際に分裂してしまうので、`/data merge entity <スライム> {Size:0}`で最小サイズに変更してからkillします。
+
+        summon minecraft:slime ~ ~ ~ {Size:2,CustomName:'"ボスの名前"',NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Tags:["識別用タグ"],DeathLootTable:"minecraft:empty",Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.0d},{Name:"minecraft:generic.max_health",Base:1024.0d}],Health:1024.0f,ActiveEffects:[{Id:14b,Amplifier:1b,Duration:2147483647,ShowParticles:0b}]}
+
+`ActiveEffects:[{Id:14b,Amplifier:1b,Duration:2147483647,ShowParticles:0b}]`：透明化  
+`Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.0d},{Name:"minecraft:generic.max_health",Base:1024.0d}],Health:1024.0f`：移動速度を0に、HPを最大に  
+
+召喚した当たり判定用エンティティは、モデル表示用エンティティからのローカル座標系(^)で位置を決定します。
+
+        # 例：スライムA(当たり判定用)を防具立てB(モデル表示用)基準にtp
+        execute as <スライムA> at <防具立てB> run tp ^ ^1 ^0.5
 
