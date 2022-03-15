@@ -84,7 +84,20 @@
 そして、ボスの現在のHPを計算したら、ボスバーの値を更新します。
 
     execute store result bossbar boss:health value run scoreboard players get <メインエンティティ> health
-        
+
+
+
+## 4. 死亡処理
+
+HPが0以下になったとき、死亡処理をします。
+
+    # プレイヤーのボスバー表示を消す
+    bossbar set boss:health players
+    # kill時の分裂対策として、スライムのサイズを最小にする
+    execute as <スライム> run data merge entity @s {Size:0}
+    # kill
+    kill <ボス用エンティティ>
+
 
 ___
 ### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
