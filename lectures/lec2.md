@@ -62,8 +62,10 @@
 
 ※ 一時変数としてスコアボード"temp"を、ダミープレイヤーとして"$damage"を使用
 
-        # Healthをスコアに代入
-        execute as <スライム> store result score @s health run data get entity @s Health
-        # ダメージを反映
-        execute as <スライム> run scoreboard players operation <メインエンティティ> health += @s health
-        execute as <スライム> run scoreboard players remove <メインエンティティ> health 1024
+
+        # execute as <スライム> で実行：
+        ## Healthをスコアに代入
+        execute store result score @s health run data get entity @s Health
+        ## ダメージを反映
+        scoreboard players operation <メインエンティティ> health += @s health
+        scoreboard players remove <メインエンティティ> health 1024
