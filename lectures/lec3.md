@@ -103,6 +103,7 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
         execute if predicate boss:random/half run scoreboard players add $next action 2
 
 8までの範囲にしたかったら以下のコマンドを追加します。
+
         execute if predicate boss:random/half run scoreboard players add $next action 4
 
 同様に、さらに倍の範囲にしたかったらさらに倍の数を加算するコマンドを追加していきます。
