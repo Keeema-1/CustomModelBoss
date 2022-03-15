@@ -1,7 +1,5 @@
 # コマンドとリソパで自作モデルのボスを動かそう！
 
-[リンク](https://github.com/Keeema-1/CustomModelEntity/blob/main/lec1.md)
-
 コマンド(データパック)とリソースパックを使って、自作モデルのボスを動かそう！  
 
 ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
@@ -17,6 +15,8 @@
 ## 概説
 
 ざっくりとした流れはこんな感じです。
+
+[1章](https://github.com/Keeema-1/CustomModelEntity/blob/main/lec1.md)
 
 1. 自作モデルをマイクラ上で表示する
 2. ボスのパーツを作成して、組み立てる
