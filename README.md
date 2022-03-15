@@ -1,6 +1,6 @@
 # コマンドとリソパで自作モデルのボスを動かそう！
 
-[リンク](https://github.com/Keeema-1/CustomModelEntity/blob/main/lec1)
+[リンク](https://github.com/Keeema-1/CustomModelEntity/blob/main/lec1.md)
 
 コマンド(データパック)とリソースパックを使って、自作モデルのボスを動かそう！  
 
