@@ -45,3 +45,26 @@
 
 ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/7.png)
 
+
+## 2. HPをスコアボードで管理
+
+続いて、それらのスライムの`Health`を用いて、ボスのHPを管理します。管理用のスコアボードとして`health`、`max_health`を追加します。
+召喚時にメインとなるエンティティに最大HPのスコアをセットします。
+
+        scoreboard players set <メインエンティティ> max_health 800
+
+この値を最大HPとして、現在のボスのHPを計算します。初めに`health`を最大HPで初期化します。
+
+        execute as <メインエンティティ> run scoreboard players operation @s health = @s max_health
+
+召喚時にスライムは`Health:1024.0f`としたので、スライムの`Health`から`1024.0f`を減算した数字が、そのスライム与えた累計ダメージとなります。
+このダメージの分だけメインエンティティの`health`から減算すれば、現在のボスのHPを求めることができます。
+
+※ 一時変数としてスコアボード"temp"を、ダミープレイヤーとして"$damage"を使用
+
+        # execute as <スライム> で実行：
+        ## Healthをスコアに代入
+        execute store result score @s health run data get entity @s Health
+        ## ダメージを反映
+        scoreboard players operation <メインエンティティ> health += @s health
+        scoreboard players remove <メインエンティティ> health 1024
