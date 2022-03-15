@@ -8,21 +8,6 @@ execute unless score $system kb.id matches 0.. run scoreboard players set $syste
 
 # 一時変数
 scoreboard objectives add kb.temp dummy
-scoreboard objectives add kb.temp2 dummy
-
-# 一時変数
-scoreboard objectives add kb.target_id dummy
-
-# 現在のアクション
-scoreboard objectives add kb.action dummy
-scoreboard objectives add kb.action_sub dummy
-
-# アクション時間制御用
-scoreboard objectives add kb.action_time dummy
-
-# 動きを繰り返すときの制御用
-scoreboard objectives add kb.anime_time dummy
-
 
 # 各パーツの角度の制御用
 ## 相対
@@ -42,29 +27,9 @@ scoreboard objectives add kb.drx dummy
 scoreboard objectives add kb.dry dummy
 scoreboard objectives add kb.drz dummy
 
-# HP
-scoreboard objectives add kb.health dummy
-scoreboard objectives add kb.max_health dummy
-## ボスパーツAIのhpが500未満になったら、このスコアを+1してHealth+=500
-scoreboard objectives add kb.hp_remove_500 dummy
-
-# 攻撃力
-scoreboard objectives add kb.attack_damage dummy
-
-# 怒りモード
-scoreboard objectives add kb.angry_time dummy
-## 前回の怒り終了時のHP
-scoreboard objectives add kb.last_angry_health dummy
-## 怒り状態になるまで最低限必要なダメージ
-scoreboard objectives add kb.angry_border dummy
-
 team add boss
 
 team modify boss collisionRule pushOwnTeam
 team modify boss nametagVisibility never
 
-bossbar add kboss:health/1 ""
-bossbar add kboss:health/2 ""
-bossbar add kboss:health/3 ""
-
-#function kboss:command/pose_data
+function kboss:command/pose_data

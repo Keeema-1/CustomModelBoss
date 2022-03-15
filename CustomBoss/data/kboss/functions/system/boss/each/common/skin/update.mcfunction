@@ -18,25 +18,7 @@ scoreboard players operation @s kb.rz_global += @s kb.rz
 
 
 # 角度を反映
-
-# == <AECに乗せるパターン> ==
-## データがないとき
-#data merge storage kboss:temp {Pose:{Head:[0.0f,0.0f,0.0f]}}
-## x
-#execute store result storage kboss:temp Pose.Head[0] float 1 run scoreboard players get @s kb.rx_global
-## y
-#execute if entity @s[tag=!KB.UsePoseZ] store result storage kboss:temp Pose.Head[1] float 1 run scoreboard players get @s kb.ry_global
-#execute if entity @s[tag=KB.UsePoseZ] run data modify storage kboss:temp Pose.Head[1] set value 0.0f
-## z
-#execute if entity @s[tag=KB.UsePoseZ] store result storage kboss:temp Pose.Head[2] float 1 run scoreboard players get @s kb.rz_global
-## 反映
-#data modify entity @s Pose set from storage kboss:temp Pose
-# == ==
-
-# == <AECに乗せないパターン> ==
-execute store result entity @s Rotation[1] float 1 run scoreboard players get @s kb.rx_global
-execute store result entity @s Rotation[0] float 1 run scoreboard players get @s kb.ry_global
-# == ==
+function kboss:system/boss/each/common/skin/update_sub
 
 data remove storage kboss:temp Pose
 data remove storage kboss:temp Rotation
