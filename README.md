@@ -12,13 +12,5 @@
  - データパック、リソースパック、各種コマンド関連(scoreboard、nbt、storage等)の知識がある程度ある人向けに解説しています。ご了承ください。  
  - Minecraft Java Edition ver1.18.2 の環境を想定しています。
 
-## 概説
 
-ざっくりとした流れはこんな感じです。
-
-[1章](https://github.com/Keeema-1/CustomModelEntity/blob/main/lec1.md)
-
-1. 自作モデルをマイクラ上で表示する
-2. ボスのパーツを作成して、組み立てる
-3. 関節部分を曲げる
-4. ポーズの保存/呼び出しをする
+[解説](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)
