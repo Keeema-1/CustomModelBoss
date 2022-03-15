@@ -85,3 +85,6 @@
 
         execute store result bossbar boss:health value run scoreboard players get <メインエンティティ> health
         
+
+___
+### Next: [3章 ボスのアクション編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)
