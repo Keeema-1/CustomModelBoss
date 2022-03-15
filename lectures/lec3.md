@@ -91,11 +91,13 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
         scoreboard players set $next action 0        
         execute if predicate kboss:random/500m run scoreboard players add $next action 1
         execute if predicate kboss:random/500m run scoreboard players add $next action 2
+        
         # 乱数に応じた次のアクションを開始
         execute if score $next action matches 0 run function <アクションAを開始>
         execute if score $next action matches 1 run function <アクションBを開始>
         execute if score $next action matches 2 run function <アクションCを開始>
         execute if score $next action matches 3 run function <アクションDを開始>
+        
         # スコアをリセット
         scoreboard players reset $next action
 
