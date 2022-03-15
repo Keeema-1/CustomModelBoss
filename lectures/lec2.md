@@ -29,7 +29,7 @@
 ## 1. 当たり判定用エンティティ
 
 ボスの当たり判定として、防具立て以外のエンティティも召喚します。  
-スライムはnbtのSizeで大きさを変更することができるため、基本的にはスライムを使うのが良いでしょう。ただし、スライムはkillした際に分裂してしまうので、`/data merge entity <スライム> {Size:0}`で最小サイズに変更してからkillします。
+スライムはnbtのSizeで大きさを変更することができるため、基本的にはスライムを使うのが良いでしょう。ただし、スライムはkillした際に分裂してしまうので、その際は`/data merge entity <スライム> {Size:0}`で最小サイズに変更してからkillするようにしましょう。
 
         summon minecraft:slime ~ ~ ~ {Size:2,CustomName:'"ボスの名前"',NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Tags:["識別用タグ"],DeathLootTable:"minecraft:empty",Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.0d},{Name:"minecraft:generic.max_health",Base:1024.0d}],Health:1024.0f,ActiveEffects:[{Id:14b,Amplifier:1b,Duration:2147483647,ShowParticles:0b}]}
 
@@ -40,4 +40,8 @@
 
         # 例：スライムA(当たり判定用)を防具立てB(モデル表示用)基準にtp
         execute as <スライムA> at <防具立てB> run tp ^ ^1 ^0.5
+
+複数のスライムを召喚して、サイズ変更や位置調整をして当たり判定を決定します。
+
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
 
