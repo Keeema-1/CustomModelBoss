@@ -77,9 +77,10 @@
 この機構を作れば、相対角度rx/ryを変更すれば角度が変わるはずです。
 
 ただし、防具立てに関しては、実はRotation[1]を変えても表示上の角度が変わるわけではありません。そこで、別のnbtのPoseも使います。  
-{Pose:{Head:[10.0f,20.0f,0.0f]}}のような形で設定することで、防具立ての頭や手などの角度を変えることができます。  
+{Pose:{Head:[10.0f,20.0f,0.0f]}}のような形で設定することで、防具立ての頭や手などの角度を変えることができます。Rotationとは違い角度が3種類あり、別の回転を表現することも可能です。 
 
-        execute store result entity @s Pose.Head[0] float 1 run scoreboard players get @s rx_global
+
+        execute as <全パーツ> store result entity @s Pose.Head[0] float 1 run scoreboard players get @s rx_global
 
 だったらPoseだけでいいじゃん、と思うかもしれませんが、ローカル座標系(^)でテレポートさせる際にはRotataionを正しく反映させる必要があるため、Rotationも使っています。
 
