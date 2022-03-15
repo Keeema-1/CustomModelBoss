@@ -43,5 +43,5 @@
 
 複数のスライムを召喚して、サイズ変更や位置調整をして当たり判定を決定します。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/7.gif)
 
