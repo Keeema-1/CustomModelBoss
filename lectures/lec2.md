@@ -60,12 +60,28 @@
 召喚時にスライムは`Health:1024.0f`としたので、スライムの`Health`から`1024.0f`を減算した数字が、そのスライム与えた累計ダメージとなります。
 このダメージの分だけメインエンティティの`health`から減算すれば、現在のボスのHPを求めることができます。
 
-※ 一時変数としてスコアボード"temp"を、ダミープレイヤーとして"$damage"を使用
-
-
         # execute as <スライム> で実行：
         ## Healthをスコアに代入
         execute store result score @s health run data get entity @s Health
         ## ダメージを反映
         scoreboard players operation <メインエンティティ> health += @s health
         scoreboard players remove <メインエンティティ> health 1024
+
+## 3. ボスバーで表示
+
+次はボスのHPをボスバーで表示してみます。
+
+まず、ボスバーを追加します。ボスバーに表示する名前は召喚時に設定すればよいので、最初は設定しなくても構いません。
+
+        bossbar add boss:health ""
+
+ボス召喚時に、表示プレイヤー、ボス名、ボスバーの最大値を設定します。
+
+        bossbar set boss:health players @a
+        bossbar set boss:health name "ボス名"
+        execute store result bossbar boss:health max run scoreboard players get <メインエンティティ> max_health
+
+そして、ボスの現在のHPを計算したら、ボスバーの値を更新します。
+
+        execute store result bossbar boss:health value run scoreboard players get <メインエンティティ> health
+        
