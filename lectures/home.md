@@ -17,7 +17,7 @@
 
 ざっくりとした流れはこんな感じです。
 
-[1章](https://github.com/Keeema-1/CustomModelEntity/blob/main/lec1.md)
+[1章](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)
 
 1. 自作モデルをマイクラ上で表示する
 2. ボスのパーツを作成して、組み立てる
