@@ -85,18 +85,29 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
 
 ## 2. 乱数でアクションを決定
 
-先ほどはアクションが終了したら止まってしまいましたが、アクション終了時にランダムで次のアクションを決めるようにします。
+先ほどはアクションが終了したら止まってしまいましたが、アクション終了時にランダムで次のアクションを決めるようにします。  
+乱数生成の方法はいろいろあるので、好きな方法を使いましょう。今回は、predicateのrandom_chanceを使った方法を紹介します。
+
+`boss/predicates/random/half.json`として以下のpredicateを作成します。1/2の確率で条件に成功するpredicateです。
+
+        {
+            "condition": "minecraft:random_chance",
+            "chance": 0.5
+        }
+
+このpredicateを使って乱数を手動で生成しています。この方法では2の累乗通りの乱数しか正しく生成できないという制約がありますが、軽そうなのでまあいいかなという気持ちで使っています。何かいい方法があったら教えてください。
 
         # 乱数生成
-        scoreboard players set $next action 0        
-        execute if predicate kboss:random/500m run scoreboard players add $next action 1
-        execute if predicate kboss:random/500m run scoreboard players add $next action 2
+        scoreboard players set $next action 1        
+        execute if predicate boss:random/half run scoreboard players add $next action 1
+        execute if predicate boss:random/half run scoreboard players add $next action 2
+        execute if predicate boss:random/half run scoreboard players add $next action 3
         
         # 乱数に応じた次のアクションを開始
-        execute if score $next action matches 0 run function <アクションAを開始>
-        execute if score $next action matches 1 run function <アクションBを開始>
-        execute if score $next action matches 2 run function <アクションCを開始>
-        execute if score $next action matches 3 run function <アクションDを開始>
+        execute if score $next action matches 1 run function <アクション1を開始>
+        execute if score $next action matches 2 run function <アクション2を開始>
+        …
+        execute if score $next action matches 8 run function <アクション8を開始>
         
         # スコアをリセット
         scoreboard players reset $next action
