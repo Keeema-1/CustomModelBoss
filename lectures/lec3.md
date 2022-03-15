@@ -22,6 +22,7 @@
 
 1. アクションの作成
 2. 乱数でアクションを決定
+3. アクションのあれこれ
 
 前章では、ボスのHPの要素を解説しました。本章では、ボスのアクションの要素を実装します。
 
@@ -117,9 +118,23 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
     execute if score $next action matches 2 run function <アクションBを開始>
     execute if score $next action matches 3 run function <アクションCを開始>
     execute if score $next action matches 4 run function <アクションDを開始>
-        
+    
     # スコアをリセット
     scoreboard players reset $next action
+
+
+## 3. アクションのあれこれ
+
+ここまで来たら、あとはアクションをいろいろ追加して、ボス戦が楽しくなるようにアクションを調整していきます。  
+次のことを心掛けると良いでしょう。
+
+#### 近距離攻撃、遠距離攻撃など、なるべく多様なアクションを追加する
+ボスの動きが単調だと、戦闘も単調で飽きやすくなってしまいます。
+
+#### プレイヤーとの位置関係でアクションの抽選を分岐する
+プレイヤーが遠いのに近距離攻撃ばかりだと違和感がありますからね。
+
+また、死亡時にはすぐに死亡処理するのではなく、アニメーションをしてから処理すると良いでしょう。
 
 ___
 ### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
