@@ -67,16 +67,16 @@
 #### <具体的な計算方法>
 1つの親パーツと、それにくっついている1つの子パーツで考えてみます。前提として親パーツのrx_global/ry_globalが決まっているならば、(子パーツの絶対角度)=(親パーツの絶対角度)+(子パーツの相対角度)です。
 
-        scoreboard players operation <子> rx_global = <親> rx_global
-        scoreboard players operation <子> rx_global += <子> rx
+    scoreboard players operation <子> rx_global = <親> rx_global
+    scoreboard players operation <子> rx_global += <子> rx
 
-        scoreboard players operation <子> ry_global = <親> ry_global
-        scoreboard players operation <子> ry_global += <子> ry
+    scoreboard players operation <子> ry_global = <親> ry_global
+    scoreboard players operation <子> ry_global += <子> ry
 
 メインのパーツのrx_global/ry_globalはメインパーツのRotationをそのまま使用し、それにくっ付くパーツに順番にこの計算を行い、各々の結果をRotationに代入します。
 
-        execute as <全パーツ> store result entity @s Rotation[1] float 1 run scoreboard players get @s rx_global
-        execute as <全パーツ> store result entity @s Rotation[0] float 1 run scoreboard players get @s ry_global
+    execute as <全パーツ> store result entity @s Rotation[1] float 1 run scoreboard players get @s rx_global
+    execute as <全パーツ> store result entity @s Rotation[0] float 1 run scoreboard players get @s ry_global
 
 この機構を作れば、相対角度rx/ryを変更すれば角度が変わるはずです。
 
@@ -84,7 +84,7 @@
 {Pose:{Head:[10.0f,20.0f,0.0f]}}のような形で設定することで、防具立ての頭や手などの角度を変えることができます。Rotationとは違い角度が3種類あり、別の回転を表現することも可能です。 
 
 
-        execute as <全パーツ> store result entity @s Pose.Head[0] float 1 run scoreboard players get @s rx_global
+    execute as <全パーツ> store result entity @s Pose.Head[0] float 1 run scoreboard players get @s rx_global
 
 だったらPoseだけでいいじゃん、と思うかもしれませんが、ローカル座標系(^)でテレポートさせる際にはRotataionを正しく反映させる必要があるため、Rotationも使っています。
 
@@ -107,25 +107,25 @@ tellrawコマンドでチャット欄に現在の角度情報を表示します�
 
 ポーズ開発コマンドでポーズを決めたら、次はポーズの保存をします。ポーズは各パーツのスコアrx/ryをstorageに代入して保存します。
 
-        #例: ボス"boss_name"のポーズ"pose_name"を保存するとき
-        ## パーツX
-        execute store result storage boss:pose boss_name.pose_name.X.rx int 1 run scoreboard players get <パーツX> rx
-        execute store result storage boss:pose boss_name.pose_name.X.ry int 1 run scoreboard players get <パーツX> ry
-        ## パーツY
-        execute store result storage boss:pose boss_name.pose_name.Y.rx int 1 run scoreboard players get <パーツY> rx
-        execute store result storage boss:pose boss_name.pose_name.Y.ry int 1 run scoreboard players get <パーツY> ry
-        ...
+    #例: ボス"boss_name"のポーズ"pose_name"を保存するとき
+    ## パーツX
+    execute store result storage boss:pose boss_name.pose_name.X.rx int 1 run scoreboard players get <パーツX> rx
+    execute store result storage boss:pose boss_name.pose_name.X.ry int 1 run scoreboard players get <パーツX> ry
+    ## パーツY
+    execute store result storage boss:pose boss_name.pose_name.Y.rx int 1 run scoreboard players get <パーツY> rx
+    execute store result storage boss:pose boss_name.pose_name.Y.ry int 1 run scoreboard players get <パーツY> ry
+    ...
 
 ポーズを呼び出す場合は、逆にstorageからスコアボードに代入します。
 
-        # 例: ボス"boss_name"のポーズ"pose_name"を呼び出すとき
-        ## パーツX
-        execute store result score <パーツX> rx run data get storage boss:pose boss_name.pose_name.X.rx
-        execute store result score <パーツX> ry run data get storage boss:pose boss_name.pose_name.X.ry
-        ## パーツY
-        execute store result score <パーツY> rx run data get storage boss:pose boss_name.pose_name.Y.rx
-        execute store result score <パーツY> ry run data get storage boss:pose boss_name.pose_name.Y.ry
-        ...
+    # 例: ボス"boss_name"のポーズ"pose_name"を呼び出すとき
+    ## パーツX
+    execute store result score <パーツX> rx run data get storage boss:pose boss_name.pose_name.X.rx
+    execute store result score <パーツX> ry run data get storage boss:pose boss_name.pose_name.X.ry
+    ## パーツY
+    execute store result score <パーツY> rx run data get storage boss:pose boss_name.pose_name.Y.rx
+    execute store result score <パーツY> ry run data get storage boss:pose boss_name.pose_name.Y.ry
+    ...
 
 こんな感じでセット出来ました。
 
@@ -139,8 +139,8 @@ tellrawコマンドでチャット欄に現在の角度情報を表示します�
 
 続いて、目標値に対して角速度を加算or減算して近づいていく処理を追加します。ポーズをセットする時にこの角速度を変えることで、動きの速さが変化します。
 
-        execute if score @s rx < @s rx_goal run scoreboard players operation @s rx += @s drx
-        execute if score @s rx > @s rx_goal run scoreboard players operation @s rx -= @s drx
+    execute if score @s rx < @s rx_goal run scoreboard players operation @s rx += @s drx
+    execute if score @s rx > @s rx_goal run scoreboard players operation @s rx -= @s drx
 
 ### 4-4. 別ワールドへのポーズ情報の引継ぎ
 
