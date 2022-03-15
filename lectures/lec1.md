@@ -210,3 +210,7 @@ impulse:
 などがあります。
 
 エンティティが読み込み範囲外に移動したときの対策も必要かもしれません。
+
+
+
+### Next: [2章 ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)
