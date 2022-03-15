@@ -17,9 +17,20 @@
 
 ざっくりとした流れはこんな感じです。
 
-### [1章 ボスを動かすまで](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)
+### [1章 ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)
 
 1. 自作モデルをマイクラ上で表示する
 2. ボスのパーツを作成して、組み立てる
 3. 関節部分を曲げる
 4. ポーズの保存/呼び出しをする
+
+### [2章 ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)
+
+1. 当たり判定用エンティティ
+2. HPをスコアボードで管理
+3. ボスバーで表示
+
+### [2章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
+
+1. アクションの作成
+2. 乱数でアクションを決定
