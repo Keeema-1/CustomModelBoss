@@ -14,9 +14,7 @@
  - データパック、リソースパック、各種コマンド関連(scoreboard、nbt、storage等)の知識がある程度ある人向けに解説しています。ご了承ください。  
  - Minecraft Java Edition ver1.18 の環境を想定しています。
 
-## 概説
-
-ざっくりとした流れはこんな感じです。
+## 目次
 
 ### [1章 ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)
 
