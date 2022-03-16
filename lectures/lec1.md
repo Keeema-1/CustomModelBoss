@@ -9,7 +9,7 @@
 ざっくりとした流れはこんな感じです。
 
  **1章 ボスを動かす編**
-1. [自作モデルをマイクラ上で表示する](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md#:~:text=%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%82%92%E3%81%99%E3%82%8B-,1.%20%E8%87%AA%E4%BD%9C%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%A9%E4%B8%8A%E3%81%A7%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B,-%E3%81%BE%E3%81%9A%E3%81%AF%E8%87%AA%E4%BD%9C%E3%83%A2%E3%83%87%E3%83%AB)
+1. [自作モデルをマイクラ上で表示する](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md#:~:text=1.-,%E8%87%AA%E4%BD%9C%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%A9%E4%B8%8A%E3%81%A7%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B,-%E3%81%BE%E3%81%9A%E3%81%AF%E8%87%AA%E4%BD%9C%E3%83%A2%E3%83%87%E3%83%AB)
 2. ボスのパーツを作成して、組み立てる
 3. 関節部分を曲げる
 4. ポーズの保存/呼び出しをする
