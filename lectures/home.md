@@ -29,8 +29,8 @@
 3. ボスバーで表示
 4. 死亡処理
 
-### [2章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
+### [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
 
 1. アクションの作成
 2. 乱数でアクションを決定
-3. アクションのもろもろ
+3. アクションのあれこれ
