@@ -1,20 +1,15 @@
 # コマンドとリソパで自作モデルのボスを動かそう！  2章 ボスのHPを設定する編
 
-[メインへ](https://github.com/Keeema-1/CustomModelEntity)
+## 目次
 
-[解説ホームへ](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)
+**[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
 
-コマンド(データパック)とリソースパックを使って、自作モデルのボスを動かそう！  
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/1.gif)
-
-こんな感じのボスをどうやって作っているのか気になる！という方向けに、自分なりの自作モデルのボスを動かす方法を解説します。  
-
-※注意※  
- - あくまで自分が使っている方法の紹介であり、これが最もよい方法という訳ではないと思います。実装方法は人それぞれなので、あくまで参考程度に見てもらおうというつもりで書きました。  
- - 最適化よりも分かりやすさを重視して書いている部分もあります。  
- - データパック、リソースパック、各種コマンド関連(scoreboard、nbt、storage等)の知識がある程度ある人向けに解説しています。ご了承ください。  
- - Minecraft Java Edition ver1.18.2 の環境を想定しています。
+1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**  
+2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
+3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
+4章. **[防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)**  
 
 ## 概説
 
