@@ -125,5 +125,5 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
 また、死亡時にはすぐに死亡処理するのではなく、アニメーションをしてから処理すると良いでしょう。
 
 ___
-### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
+### Next: [4章 防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
 
