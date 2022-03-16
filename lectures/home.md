@@ -36,7 +36,7 @@
 2. 乱数でアクションを決定
 3. アクションのあれこれ
 
-### [4章 仕上げ編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
+### [4章 工夫編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
 
 1. 防具立ての表示ズレ対策
 2. ブロックでの窒息ダメージ対策
