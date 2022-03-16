@@ -36,8 +36,7 @@
 2. 乱数でアクションを決定
 3. アクションのあれこれ
 
-### [4章 工夫編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
+### [4章 防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
 
-1. 防具立ての表示ズレ対策
-2. ブロックでの窒息ダメージ対策
-3. ボスが演算距離外に行ったときの対策
+1. 対策方法の紹介
+2. 防具立てを使ったままズレを軽減させる方法
