@@ -1,4 +1,4 @@
-# コマンドとリソパで自作ボスモデルを動かそう！
+# コマンドとリソパでボスを作ろう！
 
 **[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
 
