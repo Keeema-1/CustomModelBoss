@@ -77,8 +77,3 @@ tick関数内：
 ↓  
 下のAEC: 算出したスコアをRotationに代入し、(演算上の)向きを反映させた状態でローカル座標tpでパーツの**位置**を反映させる  
 上の防具立て: 算出したスコアをPoseに代入し、**(表示上の)向き**を反映させる
-
-___
-### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
-
-
