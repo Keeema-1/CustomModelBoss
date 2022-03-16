@@ -35,3 +35,9 @@
 1. アクションの作成
 2. 乱数でアクションを決定
 3. アクションのあれこれ
+
+### [4章 仕上げ編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
+
+1. 防具立ての表示ズレ対策
+2. ブロックでの窒息ダメージ対策
+3. ボスが演算距離外に行ったときの対策
