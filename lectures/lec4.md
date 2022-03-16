@@ -6,10 +6,10 @@
 
 **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
 
-1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**  
-2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
-3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
-4章. **防具立ての描画ズレ対策編**  
+**1章. [ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**  
+**2章. [ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
+**3章. [ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
+**4章. 防具立ての描画ズレ対策編**  
 
 ## 概説
 
