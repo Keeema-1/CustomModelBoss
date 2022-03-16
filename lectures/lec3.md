@@ -89,7 +89,7 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
 先ほどはアクションが終了したら止まってしまいましたが、アクション終了時にランダムで次のアクションを決めるようにします。  
 乱数生成の方法はいろいろあるので、好きな方法を使いましょう。今回は、predicateのrandom_chanceを使った方法を紹介します。
 
-`boss/predicates/random/half.json`として以下のpredicateを作成します。1/2の確率で条件に成功するpredicateです。
+`predicates/random/half.json`として以下のpredicateを作成します。1/2の確率で条件に成功するpredicateです。
 
     {
         "condition": "minecraft:random_chance",
