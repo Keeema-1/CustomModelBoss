@@ -13,4 +13,4 @@
  - Minecraft Java Edition ver1.18.2 の環境を想定しています。
 
 
-[解説](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)
+**[【解説はこちら】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
