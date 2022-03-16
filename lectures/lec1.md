@@ -1,8 +1,15 @@
 # コマンドとリソパで自作モデルのボスを動かそう！  1章 ボスを動かす編
 
-**[メインへ](https://github.com/Keeema-1/CustomModelEntity)**
+## 目次
 
-**[解説ホームへ](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
+**[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
+
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
+
+1章. **ボスを動かす編**  
+2章. **[ボスのパーツを作成して、組み立てる](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
+3章. **[関節部分を曲げる](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
+4章. **[ポーズの保存/呼び出しをする](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)**  
 
 ## 概説
 
@@ -160,32 +167,6 @@ impulse:
  - あらかじめ設定しておいたポーズをセットする  
 
 また、ここまでをまとめたデータパック＆リソースパックも配布します。なるべく単純なものにしたので、理解したい人は覗いてみるのをオススメします。
-
-
-
- - boss
-     - general
-         - main ここがメイン部分
-         - (living) 
-         - (dead)
-         - active 各パーツへ
-     - each
-         - boss_A
-             - skin モデル表示用エンティティの制御
-             - hit_box 当たり判定用エンティティの制御
-             - action アクションを制御
-
-
-
- - boss
-     - general
-         - main ここがメイン部分
-         - active 各パーツへ
-     - each
-         - boss_A
-             - skin モデル表示用エンティティの制御
-
-
 
 
 ## おまけ
