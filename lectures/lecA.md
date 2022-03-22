@@ -23,8 +23,7 @@
 
 ## 3. リソースパックのフォーマット
 
-リソースパックを導入するには、パックフォルダーを
-
+リソースパックを導入するには、パックフォルダー([ここ](https://github.com/Keeema-1/CustomModelEntity))
 
 ## 3. modelsとtextures
 デフォルトリソースパックの中に、models textures ... 色々な要素がある。今回はmodelsとtexturesのみを使うので、これらについて解説する。
