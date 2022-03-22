@@ -24,10 +24,6 @@
 
 ## 3. リソースパックのフォーマット
 
-参考：[Minecraft Japan Wiki : リソースパック/作り方](https://minecraftjapan.miraheze.org/wiki/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF/%E4%BD%9C%E3%82%8A%E6%96%B9)
-
-参考：[Minecraft Japan Wiki : リソースパック/リソースパック構成](https://minecraftjapan.miraheze.org/wiki/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF%E6%A7%8B%E6%88%90)
-
 リソースパックを導入する方法は、パックフォルダー([ここ](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecA.md#:~:text=%E8%A8%AD%E5%AE%9A%E2%86%92%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF%E2%86%92%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC%E3%82%92%E9%96%8B%E3%81%8F%20%E3%81%A7%E9%96%8B%E3%81%84%E3%81%9F%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80))に導入したいリソースパックフォルダーを入れるだけです。リソースパックはファイルフォルダー形式か圧縮zipフォルダー形式である必要があります。。
 
 参考：[Minecraft Wiki : リソースパック](https://minecraft.fandom.com/ja/wiki/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF#:~:text=X-,%E6%8C%AF%E3%82%8B%E8%88%9E%E3%81%84,-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF%E3%81%AE)
