@@ -36,7 +36,7 @@
 2. 乱数でアクションを決定
 3. アクションを増やす
 
-### [4章 防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
+### [4章 手直し編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
 
-1. 対策方法の紹介
-2. 防具立てを使ったままズレを軽減させる方法
+1. 防具立ての描画ズレ対策
+2. Z方向の回転
