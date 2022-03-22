@@ -105,7 +105,7 @@ ___
 
 座標`[x,y]`を角度`Δrz`だけ回転させた座標は、
 
-    [x',y']=[x*cos(-Δrz)-y*sin(-Δrz), x*sin(Δrz)+y*cos(-Δrz)]
+    [x',y']=[x*cos(-Δrz)-y*sin(-Δrz), x*sin(-Δrz)+y*cos(-Δrz)]
 
 となります。
 
