@@ -94,9 +94,14 @@ tick関数内：
 #### 注意点1
 ___
 今の状態でZ方向に回転させても、このようにパーツの位置がズレてしまいます。nbtのRotationには2方向の回転しか無く、`/tp ^ ^ ^`を用いてこの回転を表現することができないためです。  
+
 どうしてもZ方向の回転を実装したい場合、回転した角度に応じて`tp ^x ^y ^z`のx,yの値を調整する必要があります。  
 
 ここで、整理するために`tp ^x ^y ^z`と`Pose:{Head:[rx,ry,rz]}`の方向を表した図を作りました。
+
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/8.png)
+
+![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/9.png)
 
 座標`[x,y]`を角度`Δrz`だけ回転させた座標は、
 
