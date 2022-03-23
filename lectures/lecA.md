@@ -115,7 +115,7 @@ modelsの中にはアイテムやブロックの形、そしてどの面にど�
       }
     }
 
-`textures`はそのモデルに使用するテクスチャの場所と名前を表しています。リソースパックの`textures`下の場所を表していて、この場合は`textures/item/stick.png`が参照されます。  
+`textures`はそのモデルに使用するテクスチャの場所と名前を表しています。リソースパックの`textures`下の場所を表していて、この場合は`textures/item/apple.png`が参照されます。  
 `parent`はモデルの親となるファイルの場所を示してます。指定されたファイルに、どのような形のモデルがどのような大きさ/角度で表示されるか、の情報が入っています。続いて、`models/items/stick.json`の中身を覗いてみましょう。
 
     {
@@ -125,8 +125,8 @@ modelsの中にはアイテムやブロックの形、そしてどの面にど�
       }
     }
 
-リンゴの`parent`は`generated`、棒の`parent`は`handheld`となっています。これらの違いは、手に持った時に`handheld`だと剣のように持つ、ということです。
-`models/item/generated`, `models/item/handheld` には、それぞれどのような形で、どのような大きさ/角度で表示されるのか、の情報が記述されています。
+リンゴの`parent`は`generated`、棒の`parent`は`handheld`となっています。これらの違いは、`handheld`だと手に持った時に剣のように立てて持つ、というものです。
+`models/item/generated.json`, `models/item/handheld.json` には、どのような形のモデルで、どのような大きさ/角度で表示されるのか、の情報が記述されています。
 
 `parent`を指定せず、他の情報をそのまま書くこともできます。一例として`models/block/cake.json`の中身を見てみます。
 
