@@ -6,7 +6,7 @@
 2. リソースパックの中身
 3. リソースパックのフォーマット
 4. modelsとtextures
-5. 3Dモデルの作成
+5. 3Dモデルの作成 → BlockBenchの使い方
 6. CustomModelData
 
 
@@ -45,16 +45,6 @@ ___
         | - models  
         | - textures  
         | - ...
-        
-
- - ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/10.png)リソースパック名  
-     - pack.mcmeta  ← リソースパックの基本情報を書くファイル(必須)  
-     - pack.png  ← リソースパックのアイコン用の画像ファイル(無くてもOK)  
-     - ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/10.png)assets  ← このフォルダないにいろいろなリソースを入れる  
-         - ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/10.png)models  
-         - ![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/10.png)textures  
-         - ...
-
 
 
 参考：[Minecraft Japan Wiki : リソースパック/作り方](https://minecraftjapan.miraheze.org/wiki/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF/%E4%BD%9C%E3%82%8A%E6%96%B9#:~:text=%E3%82%88%E3%81%84%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%80%82-,%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF%E3%81%AE%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A7%8B%E9%80%A0,-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF%E3%81%AF)
