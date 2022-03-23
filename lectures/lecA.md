@@ -57,7 +57,7 @@ ___
 
     {
       "pack": {
-        "pack_format": 8,
+        "pack_format": 9,
         "description": "ここにリソースパックの説明文を書きます"
       }
     }
