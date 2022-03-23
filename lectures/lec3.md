@@ -135,4 +135,4 @@ ___
 
 **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
-### Next: [4章 防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)
+### Next: [4章 手直し編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)
