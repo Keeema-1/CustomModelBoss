@@ -2,14 +2,14 @@
 
 ## 目次
 
-**[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
+**[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
-**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
-1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**  
-2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
+1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec1.md)**  
+2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**  
 3章. **ボスのアクションを作る編**  
-4章. **[手直し編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)**  
+4章. **[手直し編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**  
 
 ## 概説
 
@@ -132,5 +132,5 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
 また、死亡時にはすぐに死亡処理するのではなく、アニメーションをしてから処理すると良いでしょう。
 
 ___
-### Next: [4章 防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)
+### Next: [4章 防具立ての描画ズレ対策編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)
 
