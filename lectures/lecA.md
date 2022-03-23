@@ -62,9 +62,9 @@ ___
       }
     }
 
-`pack_format`は使用するMinecraftのバージョンによって対応した数字を書く必要があります。今回はVer.1.18を想定しているため、そのバージョンに対応した数字の8としています。
+`pack_format`は使用するMinecraftのバージョンによって対応した数字を書く必要があります。今回はVer.1.18.2を想定しているため、そのバージョンに対応した数字の9としています。
 
-参考：[Minecraft Wiki : リソースパック](https://minecraft.fandom.com/ja/wiki/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF#:~:text=%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%80%82-,%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88,-%E6%AC%A1%E3%81%AE%E8%A1%A8)
+参考：[Minecraft Wiki : pack_format](https://minecraft.fandom.com/wiki/Pack_format)
 
 ___
 
