@@ -1,6 +1,6 @@
 # 自作モデルをマイクラ上で表示する方法
 
-**[戻る](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**
+**[[戻る]](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**
 
 ## 目次
 
