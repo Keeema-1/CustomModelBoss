@@ -167,4 +167,7 @@ data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y"
 また、ここまでをまとめたデータパック＆リソースパックも配布します。なるべく単純なものにしたので、理解したい人は覗いてみるのをオススメします。
 
 ___
+
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
+
 ### Next: [2章 ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)
