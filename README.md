@@ -7,3 +7,5 @@
 こんな感じのボスをどうやって作っているのか気になる！という方向けに、自分なりのボス作成方法を解説します。  
 
 **[【解説はこちら】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
+
+
