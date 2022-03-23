@@ -123,8 +123,6 @@
     execute store result score <パーツY> ry run data get storage boss:pose boss_name.pose_name.Y.ry
     ...
 
-こんな感じでセット出来ました。
-
 ### 4-3. 角速度
 
 このままではポーズが一瞬で切り替わるので、滑らかに切り替わるようにします。  
