@@ -57,12 +57,12 @@ ___
 
     {
       "pack": {
-        "pack_format": 9,
+        "pack_format": 8,
         "description": "ここにリソースパックの説明文を書きます"
       }
     }
 
-`pack_format`は使用するMinecraftのバージョンによって対応した数字を書く必要があります。今回はVer.1.18.2を想定しているため、そのバージョンに対応した数字の9としています。
+`pack_format`は使用するMinecraftのバージョンによって対応した数字を書く必要があります。今回はVer.1.18を想定しているため、そのバージョンに対応した数字の8としています。
 
 参考：[Minecraft Wiki : pack_format](https://minecraft.fandom.com/wiki/Pack_format)
 
