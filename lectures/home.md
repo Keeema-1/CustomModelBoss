@@ -18,7 +18,7 @@
 
 ### [1章 ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)
 
-1. 自作モデルをマイクラ上で表示する
+1. 自作モデルをマイクラ上で表示する  → [自作モデルをマイクラ上で表示する](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecA.md)
 2. ボスのパーツを作成して、組み立てる
 3. 関節部分を曲げる
 4. ポーズの保存/呼び出しをする
