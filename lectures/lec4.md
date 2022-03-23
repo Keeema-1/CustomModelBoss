@@ -2,13 +2,13 @@
 
 ## 目次
 
-**[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
+**[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
-**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
-1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**  
-2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
-3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
+1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec1.md)**  
+2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**  
+3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**  
 4章. **手直し編**  
 
 ## 概説
@@ -99,9 +99,9 @@ ___
 
 ここで、整理するために`tp ^x ^y ^z`と`Pose:{Head:[rx,ry,rz]}`の方向を表した図を作りました。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/8.png)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/8.png)
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/9.png)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/9.png)
 
 座標`[x,y]`を角度`Δrz`だけ回転させた座標は、
 
