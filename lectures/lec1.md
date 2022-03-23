@@ -2,20 +2,20 @@
 
 ## 目次
 
-**[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
+**[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
-**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
 1章. **ボスを動かす編**  
-2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)**  
-3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
-4章. **[手直し編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)**  
+2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**  
+3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**  
+4章. **[手直し編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**  
 
 ## 概説
 
 ざっくりとした流れはこんな感じです。
 
-1. 自作モデルをマイクラ上で表示する  → **[【詳細】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecA.md)**
+1. 自作モデルをマイクラ上で表示する  → **[【詳細】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecA.md)**
 2. ボスのパーツを作成して、組み立てる
 3. 関節部分を曲げる
 4. ポーズの保存/呼び出しをする
@@ -27,18 +27,18 @@
 どのように自作モデルを表示するかというと、「リソースパックでアイテムのモデルを変更する」というやり方です。そのアイテムを防具立ての頭に装着させて、防具立てを動かしたりしてボスを動きを表現します。  
 モデリングソフトにはBlockBenchを使用しています。この先の解説もBlockBenchを使用している前提で進めていくので、ご了承ください。  
 
-ここの詳細は **[【こちら】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecA.md)**。わかる人は飛ばして2に行きましょう。
+ここの詳細は **[【こちら】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecA.md)**。わかる人は飛ばして2に行きましょう。
 
 
 ## 2. ボスのパーツを作成して、組み立てる
 
 ボスモデルを作成する際には、動かしたいパーツごとに分けてモデルを作成する必要があります。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/2.png)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/2.png)
 
 パーツの中で、メインとなるパーツを決めます。メインのパーツを根として、他のパーツはそこから伸びる枝のように考えます。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/3.png)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/3.png)
 
 メインパーツが動きの軸となるため、体の胴体などのあまり動かない部分にすることをお勧めします。つながっている2つのパーツについて、メイン側のパーツを親パーツ、末端側のパーツを子パーツと呼ぶこととします。
 
@@ -94,7 +94,7 @@
 
 まずは、ポーズを設定しやすいようにポーズ開発コマンドを作成します。こんな感じで、チャット欄をポチポチするだけでポーズを作ることができるコマンド機構です。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/5.gif)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/5.gif)
 
 `/tellraw`コマンドでチャット欄に現在の角度情報を表示します。表示したテキストをクリックすると、設定したコマンドを実行することが出来る`"clickEvent"`を使います。
 クリックしたらスコアを加算/減算し、再び角度情報を表示しています。このコマンドを使えば、マイクラ上だけで視覚的にポーズの編集をすることができます。
@@ -127,7 +127,7 @@
 
 このままではポーズが一瞬で切り替わるので、滑らかに切り替わるようにします。  
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/6.gif)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/6.gif)
 
 新たなスコアボードとして、目標角度`rx_goal`/`ry_goal`、角速度`drx`/`dry`を追加します。ポーズをセットする時は`rx`/`ry`を変更するのでは無く、目標角度値を変更するようにします。  
 
@@ -167,4 +167,4 @@ data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y"
 また、ここまでをまとめたデータパック＆リソースパックも配布します。なるべく単純なものにしたので、理解したい人は覗いてみるのをオススメします。
 
 ___
-### Next: [2章 ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec2.md)
+### Next: [2章 ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)
