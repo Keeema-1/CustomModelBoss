@@ -2,14 +2,14 @@
 
 ## 目次
 
-**[【メインへ】](https://github.com/Keeema-1/CustomModelEntity)**
+**[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
-**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/home.md)**
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
-1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**  
+1章. **[ボスを動かす編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec1.md)**  
 2章. **ボスのHPを設定する編**  
-3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)**  
-4章. **[手直し編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec4.md)**  
+3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**  
+4章. **[手直し編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**  
 
 ## 概説
 
@@ -39,7 +39,7 @@
 
 複数のスライムを召喚して、サイズ変更や位置調整をして当たり判定を決定します。
 
-![demo](https://github.com/Keeema-1/CustomModelEntity/blob/main/materials/7.png)
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/7.png)
 
 
 ## 2. HPをスコアボードで管理
@@ -96,4 +96,4 @@ HPが0以下になったとき、死亡処理をします。
 
 
 ___
-### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec3.md)
+### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)
