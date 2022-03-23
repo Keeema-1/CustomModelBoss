@@ -1,6 +1,6 @@
 # 自作モデルをマイクラ上で表示する方法
 
-**[[戻る]](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**
+**[【戻る】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**
 
 ## 目次
 
@@ -164,7 +164,7 @@ modelsの中にはアイテムやブロックの形、そしてどの面にど�
 
 ここで、BlockBenchというモデリングソフトを導入します。このソフトは、リソパ用のモデルを作成するのに適したソフトで、作ったモデルをアイテム/ブロックモデル用のjsonファイルとして出力することができます。
 
-BlockBenchの使い方の解説は【こちら】。
+BlockBenchの使い方の解説は[【こちら】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)。
 
 BlockBenchで作成したモデルを自作リソースパックの`models/item/stick.json`として出力して、リソースパックを適用してみましょう。棒のモデルがそのモデルに変更されれば成功です。
 
