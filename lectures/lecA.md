@@ -215,7 +215,6 @@ BlockBenchで作成したモデルを自作リソースパックの`models/item/
 このように`CustomModelData`を用いることで、既存のモデルを潰すことなくコマンドと連携してモデルを追加することができます。  
 もちろん`/give @s minecraft:stick{CustomModelData:2}`を実行すると、モデルが自作モデル2に変更されます。
 
-## まとめ
+___
 
-リソースパックの適用 F3+T
-フォーマット
+**[[戻る]](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**
