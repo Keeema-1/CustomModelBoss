@@ -8,7 +8,7 @@
 2. リソースパックの中身
 3. リソースパックのフォーマット
 4. modelsとtextures
-5. 3Dモデルの作成 → BlockBenchの使い方
+5. 3Dモデルの作成 → **[【BlockBenchの使い方】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecB.md)**
 6. CustomModelData
 
 
@@ -164,7 +164,7 @@ modelsの中にはアイテムやブロックの形、そしてどの面にど�
 
 ここで、BlockBenchというモデリングソフトを導入します。このソフトは、リソパ用のモデルを作成するのに適したソフトで、作ったモデルをアイテム/ブロックモデル用のjsonファイルとして出力することができます。
 
-BlockBenchの使い方の解説は[【こちら】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecB.md)。
+BlockBenchの使い方の解説は **[【こちら】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lecB.md)**。
 
 BlockBenchで作成したモデルを自作リソースパックの`models/item/stick.json`として出力して、リソースパックを適用してみましょう。棒のモデルがそのモデルに変更されれば成功です。
 
