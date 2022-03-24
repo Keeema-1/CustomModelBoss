@@ -1,6 +1,6 @@
 #ロード時に実行される
 tellraw @s [{"text":""}]
-tellraw @a [{"text":"データパック:Bossの導入に成功しました。","color":"yellow"}]
+tellraw @a [{"text":"ボスサンプルデータパックの導入に成功しました。","color":"yellow"}]
 
 # 個体id
 scoreboard objectives add kb.id dummy
