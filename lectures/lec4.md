@@ -95,7 +95,7 @@ tick関数内：
 
 #### 注意点1
 ___
-今の状態でZ方向に回転させても、このようにパーツの位置がズレてしまいます。nbtのRotationには2方向の回転しか無く、`/tp ^x ^y ^z`を用いてこの回転を表現することができないためです。  
+今の状態でZ方向に回転させても、このようにパーツの位置がズレてしまいます。nbtのRotationには2方向の回転しか無く、この回転を表現することができないためです。  
 
 ![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/13.gif)
 
