@@ -4,8 +4,8 @@
 **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
 **コマンドとリソパでボスを作ろう！** ボスの完成品のサンプルです。  
-**[【データパックのダウンロード】](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.0/CustomModelBoss-sample2-v0.0.0.zip)**  
-**[【リソースパックのダウンロード】](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.0/CustomModelBoss-sample2-v0.0.0.zip)**  
+**[【データパックのダウンロード】](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.1/CustomModelBoss-sample2-v0.0.1.zip)**  
+**[【リソースパックのダウンロード】](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.1/BossResourcePack.zip)**  
 
 **※注意事項※**
  - あくまでボスのサンプル用としてのデータパックです。もしダウンロードする場合は、使い捨てのワールド(チート:オン)で使用してください。
