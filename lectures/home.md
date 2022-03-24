@@ -2,6 +2,14 @@
 
 **[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
+ - **[【メイン】](https://github.com/Keeema-1/CustomModelBoss)** 
+     - **[【解説ホーム】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)** 
+         - **[【1章 ボスを動かす編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec1.md)**
+         - **[【2章 ボスのHPを設定する編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**
+         - **[【3章 アクションを作る編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**
+         - **[【4章 手直し編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**
+
+
 コマンド(データパック)とリソースパックを使って、オリジナルのボスを作ろう！  
 
 ![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/1.gif)
