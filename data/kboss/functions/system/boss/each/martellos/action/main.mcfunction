@@ -5,6 +5,7 @@ execute if score @s kb.action_time matches 1.. run scoreboard players remove @s 
 # 怒り
 function kboss:system/boss/each/martellos/action/angry/main
 
+# 各アクション処理
 execute if score @s kb.action matches 0..10 run function kboss:system/boss/each/martellos/action/sub0
 execute if score @s kb.action matches 11..20 run function kboss:system/boss/each/martellos/action/sub1
 execute if score @s kb.action matches 21..30 run function kboss:system/boss/each/martellos/action/sub2
