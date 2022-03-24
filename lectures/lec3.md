@@ -66,7 +66,7 @@
     ## 攻撃判定終了
     execute if score @s action_time matches 10 as <右腕位置のスライム> run data merge entity @s {NoAI:1b}
     ## アクション終了
-    execute unless score @s action_time matches 1.. run scoreboard players set @s action -1
+    execute unless score @s action_time matches 1.. run <アクション終了時のfunction>
 
 こんな感じで、アクションを一つずつ作っていきます。
 
