@@ -22,3 +22,11 @@
 `/function kboss:command/summon/martellos/normal` : サンプルボスを召喚します。  
 `/function kboss:dev/kill` : サンプルボスをキルします。    
 `/function kboss:dev/martellos/pose/dev` : ポーズ編集を開始します。  
+
+## ライセンス
+
+配布しているデータパックの中身は、自由にコピペして使っていただいて構いません。もしシステム全体を参考にしたものを再配布する場合などがあれば、「参考： https://github.com/Keeema-1/CustomModelBoss 」等でクレジット表記していただけると幸いです。(強制ではありません。)
+
+___
+
+何かあればTwitter(@keeema_1)にご連絡ください。
