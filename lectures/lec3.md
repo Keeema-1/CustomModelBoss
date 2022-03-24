@@ -1,7 +1,5 @@
 # コマンドとリソパでボスを作ろう！  3章 ボスのアクションを作る編
 
-## 目次
-
 **[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
  - **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)** 
