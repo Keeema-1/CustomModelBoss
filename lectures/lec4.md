@@ -122,11 +122,11 @@ ___
  - Z方向の回転を使用する方法
 この2つを両立することはできません。どちらかを使いたい場合はどちらかを捨てなければならないので、どちらを優先するか考えて実装しなければなりません。
 
-___
-
 ## 配布
 
 これまで解説したことにいろいろ付け加えた、ボスの完成品のサンプルデータパック＆リソースパックを配布します。  
 **[ボス完成品のサンプルデータパック](https://github.com/Keeema-1/CustomModelBoss/blob/sample2/README.md)**  
+
+___
 
 **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
