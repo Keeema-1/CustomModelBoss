@@ -68,6 +68,8 @@
     ## アクション終了
     execute unless score @s action_time matches 1.. run <アクション終了時のfunction>
 
+アクション終了時のfunctionでは、他のアクションへ遷移するようにします。
+
 こんな感じで、アクションを一つずつ作っていきます。
 
 #### プレイヤーへの攻撃について
@@ -89,7 +91,7 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
         "chance": 0.5
     }
 
-このpredicateを使って乱数を手動で生成しています。
+このpredicateを使って乱数を手動で生成してみます。
 
     # 乱数生成(1~4の範囲)
     scoreboard players set $next action 1        
@@ -107,14 +109,10 @@ nbtで`NoAI:1b`を設定しているモブはプレイヤーに攻撃をして�
 続いて、その乱数を用いて次のアクションを決定します。
         
     # 乱数に応じた次のアクションを開始
-    execute if score $next action matches 1 run function <アクションAを開始>
-    execute if score $next action matches 2 run function <アクションBを開始>
-    execute if score $next action matches 3 run function <アクションCを開始>
-    execute if score $next action matches 4 run function <アクションDを開始>
-    
-    # スコアをリセット
-    scoreboard players reset $next action
-
+    execute if score $next action matches 1 run <アクションAを開始するfunction>
+    execute if score $next action matches 2 run <アクションBを開始するfunction>
+    execute if score $next action matches 3 run <アクションCを開始するfunction>
+    execute if score $next action matches 4 run <アクションDを開始するfunction>
 
 ## 3. アクションを増やす
 
