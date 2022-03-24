@@ -142,13 +142,13 @@
 
 これでボスモデル表現は完成!!…と思いきや、このままでは1つ問題点が。ストレージの情報を別のワールドに引き継ぐためには、別のワールドにポーズ情報を送るためのコマンドを実装する必要があります。
 
-data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y":{"rx":0,"ry":0},...}}}
+`data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y":{"rx":0,"ry":0},...}}}`
 のように、ストレージに保存したポーズ情報を手打ちで書かなければなりません。
 
 ストレージの内容をコピーする方法として、自分が知っている1つの方法を紹介します。(もっとスマートな方法があれば教えていただきたいです。)  
 1. VisualStudioCodeの拡張機能 NBT Viewer をインストールする  
 2. .minecraft\saves\ワールド名\datapacks\データパック名\data\command_storage_XXX.dat (XXX:ストレージの名前空間) を開き、SNBT形式を選択する  
-3. 表示されたものをコピーし、data merge storage boss:pose の後ろにつながるように該当部分を切り取って整形  
+3. 表示されたものをコピーし、`data merge storage boss:pose` の後ろにつながるように該当部分を切り取って整形  
 
 ## まとめ
 
