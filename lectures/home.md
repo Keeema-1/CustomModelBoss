@@ -2,7 +2,7 @@
 
 **[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
-コマンド(データパック)とリソースパックを使って、自作モデルのボスを作ろう！  
+コマンド(データパック)とリソースパックを使って、オリジナルのボスを作ろう！  
 
 ![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/1.gif)
 
