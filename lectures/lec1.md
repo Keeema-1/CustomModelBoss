@@ -4,12 +4,14 @@
 
 **[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
 
-**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
-
-1章. **ボスを動かす編**  
-2章. **[ボスのHPを設定する編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**  
-3章. **[ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**  
-4章. **[手直し編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**  
+ - **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)** 
+     - **1章 ボスを動かす編 ← Here**
+         - **[【自作モデルをマイクラ上で表示する方法】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecA.md)**
+             - **[【BlockBenchの使い方】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecB.md)**
+         - **[【1章までのサンプルデータパック】](https://github.com/Keeema-1/CustomModelBoss/blob/sample1/README.md)**
+     - **[【2章 ボスのHPを設定する編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**
+     - **[【3章 アクションを作る編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**
+     - **[【4章 手直し編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**
 
 ## 概説
 
@@ -166,7 +168,7 @@ data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y"
 > - あらかじめ設定しておいたポーズをセットする  
 
 また、ここまでをまとめたデータパック＆リソースパックも配布します。なるべく単純なものにしたので、理解したい人は覗いてみるのをオススメします。  
-詳細は[こちら](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.0/CustomModelBoss-sample1-v0.0.0.zip)  
+**[1章までのサンプルデータパック](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.1/CustomModelBoss-sample1-v0.0.1.zip)**  
 
 
 ___
