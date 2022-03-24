@@ -102,7 +102,4 @@ ___
 
 **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)**
 
-**[【ページトップへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**
-
-
 ### Next: [3章 ボスのアクションを作る編](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)
