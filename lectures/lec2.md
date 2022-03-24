@@ -54,10 +54,10 @@
 
     execute as <メインエンティティ> run scoreboard players operation @s health = @s max_health
 
-召喚時にスライムは`Health:1024.0f`としたので、スライムの`Health`から`1024.0f`を減算した数字が、そのスライム与えた累計ダメージとなります。
+召喚時にスライムは`Health:1024.0f`としたので、スライムの`Health`から`1024.0f`を減算した数字が、そのスライムに与えた累計ダメージとなります。
 このダメージの分だけメインエンティティの`health`から減算すれば、現在のボスのHPを求めることができます。
 
-    # execute as <スライム> で実行：
+    # execute as <すべての当たり判定用エンティティ> で実行：
     ## Healthをスコアに代入
     execute store result score @s health run data get entity @s Health
     ## ダメージを反映
@@ -93,7 +93,7 @@ HPが0以下になったとき、死亡処理をします。
     # kill時の分裂対策として、スライムのサイズを最小にする
     execute as <スライム> run data merge entity @s {Size:0}
     # kill
-    kill <ボス用エンティティ>
+    kill <すべてのボスエンティティ>
 
 
 ___
