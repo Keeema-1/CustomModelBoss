@@ -125,7 +125,7 @@ ___
 ## 配布
 
 これまで解説したことにいろいろ付け加えた、ボスの完成品のサンプルデータパック＆リソースパックを配布します。  
-**[ボス完成品のサンプルデータパック](https://github.com/Keeema-1/CustomModelBoss/blob/sample2/README.md)**  
+**[【ボス完成品のサンプルデータパック】](https://github.com/Keeema-1/CustomModelBoss/blob/sample2/README.md)**  
 
 ___
 
