@@ -1,8 +1,18 @@
 # 自作モデルをマイクラ上で表示する方法
 
-**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)** 
+## 目次
 
-**[【戻る】](https://github.com/Keeema-1/CustomModelEntity/blob/main/lectures/lec1.md)**
+**[【メインへ】](https://github.com/Keeema-1/CustomModelBoss)**
+
+ - **[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)** 
+     - **[【1章 ボスを動かす編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec1.md)**
+         - **自作モデルをマイクラ上で表示する方法 ← Here**
+             - **[【BlockBenchの使い方】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecB.md)**
+         - **[【1章までのサンプルデータパック】](https://github.com/Keeema-1/CustomModelBoss/blob/sample1/README.md)**
+     - **[【2章 ボスのHPを設定する編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec2.md)**
+     - **[【3章 アクションを作る編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec3.md)**
+     - **[【4章 手直し編】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lec4.md)**
+         - **[【ボス完成品のサンプルデータパック】](https://github.com/Keeema-1/CustomModelBoss/blob/sample2/README.md)**
 
 ## 目次
 
