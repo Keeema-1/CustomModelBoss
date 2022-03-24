@@ -120,3 +120,7 @@ ___
  - `Open Model` : 既存のモデルを開く
  - `Export > Export Block/Item Model` : リソースパック用のjson形式でエクスポートする
  - `Save Model` : モデルを上書き保存する
+
+___
+
+**[【戻る】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecA.md)** 
