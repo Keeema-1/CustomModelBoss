@@ -15,4 +15,4 @@
 
 ___
 
-何かあればTwitter(@keeema_1)でご連絡ください。
+何かあればTwitter(@keeema_1)にご連絡ください。
