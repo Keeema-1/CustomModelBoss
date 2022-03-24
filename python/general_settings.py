@@ -2,4 +2,4 @@
 DIR  = '../data/kboss/'
 
 # 反映させるボス
-BOSS = 'martellos'
+BOSS = ''
