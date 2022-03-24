@@ -167,7 +167,7 @@
 > - あらかじめ設定しておいたポーズをセットする  
 
 また、ここまでをまとめたデータパック＆リソースパックも配布します。なるべく単純なものにしたので、理解したい人は覗いてみるのをオススメします。  
-**[1章までのサンプルデータパック](https://github.com/Keeema-1/CustomModelBoss/blob/sample1/README.md)**  
+**[【1章までのサンプルデータパック】](https://github.com/Keeema-1/CustomModelBoss/blob/sample1/README.md)**  
 
 ___
 
