@@ -168,8 +168,7 @@ data merge storage boss:pose {"boss_name":{"pose_name":{"X":{"rx":30,"ry":0},"Y"
 > - あらかじめ設定しておいたポーズをセットする  
 
 また、ここまでをまとめたデータパック＆リソースパックも配布します。なるべく単純なものにしたので、理解したい人は覗いてみるのをオススメします。  
-**[1章までのサンプルデータパック](https://github.com/Keeema-1/CustomModelBoss/releases/download/v0.0.1/CustomModelBoss-sample1-v0.0.1.zip)**  
-
+**[1章までのサンプルデータパック](https://github.com/Keeema-1/CustomModelBoss/blob/sample1/README.md)**  
 
 ___
 
