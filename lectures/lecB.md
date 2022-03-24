@@ -1,5 +1,9 @@
 # BlockBenchの使い方
 
+**[【解説ホームへ】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/home.md)** 
+
+**[【戻る】](https://github.com/Keeema-1/CustomModelBoss/blob/main/lectures/lecA.md)** 
+
 > [ブロックベンチ公式サイト](https://www.blockbench.net/)
 
 #### プロジェクトの開始
@@ -71,7 +75,7 @@ ___
 
 ![image](https://user-images.githubusercontent.com/92374693/159632681-e3879913-301e-494c-98a3-ea0fc4a331f3.png)
 
-`Import Texture`をクリックするとエクスプローラーが開きます。その画面でインポートする画像を選択するのですが、その画像は既に何らかのリソースパックに入っているの画像を選びましょう。  
+`Import Texture`をクリックするとエクスプローラーが開きます。その画面でインポートする画像を選択するのですが、その画像は既に何らかのリソースパックに入っている画像を選びましょう。  
 **4. texturesとmodels**の**models**で紹介したように、モデルで使用するテクスチャ画像の情報は、リソースパックの`textures`下の場所で指定する形で記述されています。BlockBenchで作ったモデルも同様にする必要があるため、自身のリソースパックの`textures`に入っている画像からインポートしましょう。
 
 **2. リソースパックの中身**でデフォルトのリソースパックをどこかにコピペしましたが、そこからインポートすることもできます。その場合は自身のリソースパックに入っていなくても、デフォルトリソースパックの画像を参照して使うことができます。
