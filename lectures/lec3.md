@@ -26,6 +26,8 @@
 
 試しに1つ、ボスのアクションを作ってみます。このように、腕のハンマーを振り下ろす攻撃です。
 
+![demo](https://github.com/Keeema-1/CustomModelBoss/blob/main/materials/11.gif)
+
 アクションの制御用に、いくつかスコアボードを追加します。  
 `action`: アクションのid  
 `action_time`: アクションの制御タイマー  
