@@ -1,0 +1,49 @@
+{
+    "BOSS_NAME" : "ボスの名前",
+    "BOSS_NAMESPACE" : "boss",
+    "BOSS_TAG" : "Boss",
+    "BOSS_SIZE_TAG" : "Medium",
+    "BOSS_SIZE_NAMESPACE" : "medium",
+    "MODEL_ENTITY" : {"id":"minecraft:armor_stand","nbt":"Invisible:1b,Marker:1b"},
+    "ON_AEC" : 1,
+    "USE_POSE_Z" : 0,
+    "MODEL_LIST" : [
+        {"name_space":"body2", "tag":"Body2", "parent":null, "is_main":1, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":1}, "tp":[0.0, 0.0, 0.0]},
+        {"name_space":"body1", "tag":"Body1", "parent":"Body2", "is_main":0, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":2}, "tp":[0.0, 0.3, 1.0]},
+        {"name_space":"neck", "tag":"Neck", "parent":"Body1", "is_main":0, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":3}, "tp":[0.0, 0.5, 1.8]},
+        {"name_space":"head", "tag":"Head", "parent":"Neck", "is_main":0, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":4}, "tp":[0.0, 0.95, 1.0]},
+        {"name_space":"left_arm", "tag":"LeftArm", "parent":"Body1", "is_main":0, "reverse_tag":"RightArm", "Head":{"id":"minecraft:knowledge_book","CustomModelData":5}, "tp":[0.9, 0.4, 1.0]},
+        {"name_space":"right_arm", "tag":"RightArm", "parent":"Body1", "is_main":0, "reverse_tag":"LeftArm", "Head":{"id":"minecraft:knowledge_book","CustomModelData":6}, "tp":[-0.9, 0.4, 1.0]},
+        {"name_space":"left_leg", "tag":"LeftLeg", "parent":"Body2", "is_main":0, "reverse_tag":"RightLeg", "Head":{"id":"minecraft:knowledge_book","CustomModelData":7}, "tp":[1.1, 0.3, -0.3]},
+        {"name_space":"right_leg", "tag":"RightLeg", "parent":"Body2", "is_main":0, "reverse_tag":"LeftLeg", "Head":{"id":"minecraft:knowledge_book","CustomModelData":8}, "tp":[-1.1, 0.3, -0.3]},
+        {"name_space":"tail", "tag":"Tail", "parent":"Body2", "is_main":0, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":9}, "tp":[0.0, 0.3, -1.3]}
+    ],
+    "HITBOX_LIST" : [
+        {"name_space":"head", "tag":"Head", "parent_skin":"Head", "tp":[0.0, 1.0, 0.3], "entity":"minecraft:slime", "Size":2},
+        {"name_space":"neck", "tag":"Neck", "parent_skin":"Neck", "tp":[0.0, 1.2, 0.3], "entity":"minecraft:slime", "Size":2},
+        {"name_space":"body1", "tag":"Body1", "parent_skin":"Body1", "tp":[0.0, 0.6, 0.4], "entity":"minecraft:slime", "Size":4},
+        {"name_space":"body2", "tag":"Body2", "parent_skin":"Body2", "tp":[0.0, 0.8, -0.6], "entity":"minecraft:slime", "Size":4},
+        {"name_space":"right_arm", "tag":"RightArm", "parent_skin":"RightArm", "tp":[0.0, 1.0, 0.0], "entity":"minecraft:slime", "Size":2},
+        {"name_space":"left_arm", "tag":"LeftArm", "parent_skin":"LeftArm", "tp":[0.0, 1.0, 0.0], "entity":"minecraft:slime", "Size":2},
+        {"name_space":"right_leg", "tag":"RightLeg", "parent_skin":"RightLeg", "tp":[0.0, 1.2, 0.2], "entity":"minecraft:slime", "Size":2},
+        {"name_space":"left_leg", "tag":"LeftLeg", "parent_skin":"LeftLeg", "tp":[0.0, 1.2, 0.2], "entity":"minecraft:slime", "Size":2},
+        {"name_space":"tail", "tag":"Tail", "parent_skin":"Tail", "tp":[0.0, 1.1, -0.5], "entity":"minecraft:slime", "Size":2}
+    ],
+    "POSE_LIST" : [
+        {"name":"bark","var":null,"phase":[
+            {"name":"1","speed":{"base":[1,1,1]},"each":[{"tag":"LeftLeg","value":[6,null,null]},{"tag":"RightLeg","value":[6,null,null]}]},
+            {"name":"2","speed":{"base":[1,1,1]},"each":[{"tag":"LeftLeg","value":[6,null,null]},{"tag":"RightLeg","value":[6,null,null]}]}
+        ]},
+        {"name":"die","var":"right","phase":[
+            {"name":"1","speed":{"base":[1,1,1]},"each":[{"tag":"LeftLeg","value":[6,null,null]},{"tag":"RightLeg","value":[6,null,null]}]},
+            {"name":"2","speed":{"base":[2,2,2]},"each":[{"tag":"LeftArm","value":[3,null,null]},{"tag":"RightArm","value":[3,null,null]}]}
+        ]}
+    ],
+    "REGENERATE_ACTION" : 0,
+    "ACTION_LIST" : [
+        {"name":"テストアクション1", "id":1},
+        {"name":"テストアクション2", "id":2}
+    ],
+    "START_ACTION":2,
+    "DEATH_ACTION":99
+}

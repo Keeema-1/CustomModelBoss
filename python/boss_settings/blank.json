@@ -1,0 +1,24 @@
+{
+    "BOSS_NAME" : "",
+    "BOSS_NAMESPACE" : "",
+    "BOSS_TAG" : "",
+    "BOSS_SIZE_TAG" : "",
+    "BOSS_SIZE_NAMESPACE" : "",
+    "MODEL_ENTITY" : {"id":"minecraft:armor_stand","nbt":"Invisible:1b,Marker:1b"},
+    "ON_AEC" : 1,
+    "USE_POSE_Z" : 0,
+    "MODEL_LIST" : [
+        {"name_space":"", "tag":"", "parent":null, "is_main":1, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":1}, "tp":[0.0, 0.0, 0.0]},
+        {"name_space":"", "tag":"", "parent":"", "is_main":0, "reverse_tag":null, "Head":{"id":"minecraft:knowledge_book","CustomModelData":2}, "tp":[0.0, 0.0, 1.0]}
+    ],
+    "HITBOX_LIST" : [
+        {"name_space":"", "tag":"", "parent_skin":"", "tp":[0.0, 0.0, 0.0], "entity":"minecraft:slime", "Size":1}
+    ],
+    "POSE_LIST" : [
+    ],
+    "REGENERATE_ACTION" : 0,
+    "ACTION_LIST" : [
+    ],
+    "START_ACTION":null,
+    "DEATH_ACTION":null
+}
